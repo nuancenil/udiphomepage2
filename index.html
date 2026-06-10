@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eudaimonia IP | 新創募資專利戰略</title>
+    <meta name="description" content="別讓你的研發心血變成廢紙。Eudaimonia IP 專注於新創募資專利佈局、DD 救援與技術鑑價。我們不講玄學，只講數學。" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eudaimonia-ip.com/" />
+    <meta property="og:title" content="Eudaimonia IP | Innovation Strategy & IP Advisory" />
+    <meta property="og:description" content="Connecting R&D and Intellectual Property into a single value chain: Insight → Strategy → Commercialization." />
+    <meta property="og:image" content="https://eudaimonia-ip.com/logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://eudaimonia-ip.com/" />
+    <meta property="twitter:title" content="Eudaimonia IP" />
+    <meta property="twitter:description" content="Connecting R&D and Intellectual Property into a single value chain." />
+    <meta property="twitter:image" content="https://eudaimonia-ip.com/logo.png" />
+
+    <!-- Favicon: Using the provided logo.svg -->
+    <link rel="icon" href="/logo.svg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#47423F',    // Pantone 412 C
+                light: '#EEEFEF',   // Pantone Cool Gray 1 C
+                white: '#FFFFFF',
+                primary: '#B6C6CF', // Pantone 644 C
+                secondary: '#94A3B8', // Keeping secondary as a utility variant
+                warm: '#A09D95',    // Pantone Warm Gray 6 C
+                accent: '#7DA0B1',
+                muted: '#94A3B8',
+                orange: '#D47854',  // Pantone 7416 C
+              }
+            },
+            fontFamily: {
+              sans: ['"Inter"', '"Noto Sans TC"', 'sans-serif'], 
+              serif: ['"Noto Serif TC"', 'serif'], 
+              mono: ['"JetBrains Mono"', 'monospace'],
+              hand: ['"Caveat"', 'cursive'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 1s ease-out',
+              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+              'float': 'float 8s ease-in-out infinite',
+              'float-delayed': 'float 8s ease-in-out 4s infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', 'Noto Sans TC', sans-serif;
+        background-color: #EEEFEF; /* Pantone Cool Gray 1 C */
+      }
+      /* Ensure root covers the screen for layout consistency */
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?deps=react@18.3.1,react-dom@18.3.1",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?deps=react@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
