@@ -241,6 +241,123 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
 
 export const posts: BlogPost[] = [
   {
+    id: 'capstan-in-vivo-cart-ip',
+    title: {
+      zh: '從專利讀懂一樁併購：Capstan 的專利組合，透露了 in vivo CAR-T 的什麼？',
+      en: 'Reading an Acquisition Through Its Patents: What Capstan\'s Portfolio Reveals About In Vivo CAR-T'
+    },
+    date: '2026-07-17',
+    excerpt: {
+      zh: '用專利情報視角拆解 Capstan Therapeutics 的六件專利組合——遞送、酬載、標靶三層架構，以及收購方如何真正為 in vivo CAR-T 估值。',
+      en: 'A patent-intelligence teardown of Capstan Therapeutics\' six-filing portfolio - delivery, payload, and targeting - and what it reveals about how acquirers really value in vivo CAR-T.'
+    },
+    tags: ['CAR-T', 'Patent Strategy', 'Drug Delivery', 'Biotech'],
+    content: {
+      zh: `
+# 從專利讀懂一樁併購：Capstan 的專利組合，透露了 in vivo CAR-T 的什麼？
+
+2025 年年中，免疫學領域最受矚目的交易之一完成：一家大型藥廠以最高 21 億美元，收購了一家臨床階段的小型生技公司。這家公司的核心只有一個大膽的構想——不在工廠裡製造 CAR-T 細胞，而是直接在病人「體內」重編程免疫細胞。
+
+對市場來說，頭條是價格。但對我們而言，更值得細讀的文件，是它的專利組合。因為當盡職調查團隊為一家研發階段公司估值時，他們買的不是新聞稿，而是一組法律權利——並且會逐一檢視這些權利，是否真的保護了他們要買的東西。
+
+於是我們用 PTAxial® 這套專利情報工具，掃描了 Capstan Therapeutics 的專利組合。以下是當你把「六件專利」讀成一套「架構」而非一份「清單」時，會看到的東西。
+
+## 這個組合的形狀
+
+Capstan 的六件專利落在三個層次。
+
+**遞送層（4 件）** 組合的重心在脂質奈米顆粒（LNP）與可電離脂質化學：一件已核准的脂質奈米顆粒配方與組合物專利（有效，權利期約至 2044 年）；可電離陽離子脂質、以及受限型可電離陽離子脂質配方的相關申請案；以及一件審查中的 PEG 脂質與脂質奈米顆粒申請案。
+
+**酬載層（1 件）** 一件 RNA 轉染申請案——也就是遞送載體所攜帶的遺傳指令。
+
+**標靶與細胞工程層（1 件）** 一件審查中的「免疫工程放大」申請案（權利期約至 2045 年）——這一層最貼近 in vivo CAR-T 的作用機制本身。
+
+合起來看，這不是六件互不相干的發明，而是要讓「體內細胞重編程」成立所必須擁有的三件事：一個能在體內存活、抵達正確細胞的載體；一段進入細胞後真正做事的酬載；以及一層把「遞送」轉化為「療法」的標靶設計。
+
+## 為什麼遞送層扛起了整個組合的重量
+
+六件裡有四件落在脂質化學，並非偶然。在 mRNA 藥物裡，分子本身往往不是最難的——難的是把它完整、以正確劑量送到正確的細胞。可電離脂質與 PEG 脂質正是這個問題的主力，也是這個領域專利爭議最集中的地方。
+
+對收購方而言，這個領域一件「已核准」的配方專利，就是整棟建築的承重牆。它最可能經得起檢驗，也最可能在數年後的自由營運（FTO）分析或授權談判中起作用。一件把權利期延伸到 2040 年代的 PEG 脂質審查中申請案，透露出這個組合是為「平台」的長期商業週期而建，而不是為單一分子的短暫壽命。
+
+## 那三件「已放棄」的申請案，是特徵，不是缺陷
+
+六件裡有三件顯示為已放棄（discontinued）。很容易把它讀成弱點。但實務上，紀律嚴謹的專利組合本來就會定期放棄或取代早期申請案——為了整併請求項、捨棄已被後續延續案更好涵蓋的路徑，或砍掉不再符合商業主軸的標的。
+
+真正的重點是「模式」。這裡被放棄的申請案都落在遞送層，而該層的核心仍由已核准專利與一件在審申請案守住。這個組合看起來是「圍繞主軸修剪」，而不是「為了衝件數灌水」。從盡職調查的角度，這反而是更健康的訊號：有人在做取捨。
+
+## 研發階段公司該從中學到什麼
+
+研發階段公司的直覺是「累積」——更多申請案、更多證書、資料室裡更厚的一疊文件。但收購方與機構投資人不會為「一疊文件」買單。他們看的是架構：這個組合有沒有一層一層地保護住公司真正要賣的機制？權利期與佈局的國家，是否在產品上市時仍然有意義？
+
+in vivo CAR-T 的論點之所以吸引人，正是因為它拿掉了讓傳統細胞療法既昂貴又受限的製造與淋巴清除（lymphodepletion）瓶頸。但這個論點的價值，取決於圍住它的專利。遞送、酬載、標靶——三層都握在手上，砍掉多餘的重量，你就有了一個盡職調查團隊能在一個下午內讀懂的故事。
+
+這就是「一堆資產」與「一個可防禦的位置」之間的差別。而這，往往也是「一紙投資意向書」與「被婉拒」之間的差別。
+
+## 查看完整分析
+
+想看這篇拆解背後的完整互動式 PTAxial® 報告——每一件專利、其法律狀態與權利期：
+
+[開啟完整 PTAxial® 報告](https://node-service-869582453108.asia-east1.run.app/r/hazellin007/capstan_20260717.html)
+
+---
+
+*本文以 Eudaimonia IP 的專利情報平台 PTAxial® 製作。專利狀態與專利家族資料依 2026 年 7 月公開紀錄，僅供策略討論，不構成法律意見。*
+      `,
+      en: `
+# Reading an Acquisition Through Its Patents: What Capstan's Portfolio Reveals About In Vivo CAR-T
+
+In mid-2025, one of the most closely watched deals in immunology closed: a large pharmaceutical acquirer paid up to US$2.1 billion for a small, clinical-stage biotech built around a single, audacious idea—engineering CAR-T cells *inside* the patient's body rather than in a manufacturing facility.
+
+For the market, the headline was the price. For us, the more interesting document was the patent portfolio. Because when a due-diligence team values a research-stage company, they are not buying press releases—they are buying a set of legal rights, and reading whether those rights actually protect the thing being sold.
+
+So we ran Capstan Therapeutics' portfolio through PTAxial®, our patent-intelligence lens. Here is what a six-filing portfolio tells you when you read it as an architecture rather than a list.
+
+## The shape of the portfolio
+
+Capstan's six filings fall into three layers.
+
+**Delivery (4 filings).** The bulk of the portfolio sits in lipid nanoparticle (LNP) and ionizable-lipid chemistry: a granted patent on lipid nanoparticle formulations and compositions (active, term to ~2044); filings on ionizable cationic lipids and on a constrained ionizable cationic lipid formulation; and a pending application on PEG-lipids and lipid nanoparticles.
+
+**Payload (1 filing).** An RNA transfection filing—the genetic instructions the vehicle carries.
+
+**Targeting and cell engineering (1 filing).** A pending application on immune engineering amplification (term to ~2045)—the layer closest to the in vivo CAR-T mechanism itself.
+
+Read together, these are not six unrelated inventions. They are the three things you must own to make in vivo cell reprogramming work: a vehicle that survives the body and reaches the right cell, a payload that does the work once inside, and a targeting layer that turns delivery into a therapy.
+
+## Why the delivery layer carries the weight
+
+It is not an accident that four of six filings sit in lipid chemistry. In mRNA medicine, the molecule is rarely the hard part—getting it to the right cell, intact and at the right dose, is. Ionizable lipids and PEG-lipids are the workhorses of that problem, and they are also where much of the field's most contested IP lives.
+
+For an acquirer, a granted formulation patent in this space is the load-bearing wall. It is the asset most likely to survive scrutiny and most likely to matter in a freedom-to-operate or licensing negotiation years from now. A pending PEG-lipid application extending the term into the 2040s signals the portfolio is being built for the long commercial horizon of a platform, not the short life of a single molecule.
+
+## The discontinued filings are a feature, not a bug
+
+Three of the six filings show as discontinued. It is tempting to read that as weakness. In practice, disciplined portfolios routinely abandon or supersede early filings—consolidating claims, dropping paths that a later continuation now covers better, or cutting subject matter that no longer fits the commercial thesis.
+
+What matters is the pattern. Here, the discontinued filings sit in the delivery layer, where the granted patent and a live pending application still hold the core. The portfolio looks pruned around a thesis, not padded to inflate a count. From a diligence standpoint, that is the healthier signal: someone was making choices.
+
+## What founders should take from this
+
+The instinct at research-stage companies is to accumulate—more filings, more certificates, a thicker binder for the data room. But acquirers and institutional investors do not value binders. They value architecture: does the portfolio protect the mechanism the company is actually selling, layer by layer, with the term and jurisdiction to matter when the product reaches market?
+
+The in vivo CAR-T thesis is compelling precisely because it removes the manufacturing and lymphodepletion bottlenecks that keep conventional cell therapy expensive and narrow. But the thesis is only as valuable as the IP that fences it. Delivery, payload, targeting—own all three, cut the dead weight, and you have a story a diligence team can follow in an afternoon.
+
+That is the difference between a pile of assets and a defensible position. And it is often the difference between a term sheet and a pass.
+
+## See the full analysis
+
+Explore the complete interactive PTAxial® report behind this teardown — every filing, its legal status, and its term:
+
+[Open the full PTAxial® report](https://node-service-869582453108.asia-east1.run.app/r/hazellin007/capstan_20260717.html)
+
+---
+
+*This analysis was produced using PTAxial®, Eudaimonia IP's patent-intelligence platform. Patent status and family data reflect public records as of July 2026 and are provided for strategic discussion, not legal advice.*
+      `
+    }
+  },
+  {
     id: 'cdmo-innovation',
     title: {
       zh: '從代工到共創：CDMO / OEM / CRO 如何在品質不失控的前提下，長出自己的創新與 IP？',
