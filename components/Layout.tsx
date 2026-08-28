@@ -30,6 +30,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     { to: '/', label: t.home, type: 'internal' },
     { to: '/services', label: t.services, type: 'internal' },
     { to: '/ptaxial', label: t.ptaxial, type: 'internal' },
+    { to: '/training', label: t.training, type: 'internal' },
     { to: '/blog', label: t.blog, type: 'internal' },
     { to: '/about', label: t.about, type: 'internal' },
     { to: '/contact', label: t.contact, type: 'internal' },

@@ -10,6 +10,7 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       about: '關於我們',
       blog: '實戰洞見',
       podcast: 'Podcast',
+      training: '培訓',
       contact: '預約諮詢',
     },
     home: {
@@ -115,6 +116,82 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
         { title: '策略沙盤推演', description: '模擬不同併購情境下的最佳佈局組合，決策不再憑感覺。' },
       ]
     },
+    training: {
+      title: '培訓與講座',
+      subtitle: '每一堂處理一個具體的決策場合，不做概論。',
+      intro: [
+        '我們把實務裡反覆遇到的問題整理成課程。內容來自實際承辦的佈局、盡職調查與授權談判，不是教科書的重述。',
+      ],
+      scheduleNote: '排期採洽詢制，每季場次有限。',
+      coursesLabel: '課程模組',
+      courses: [
+        {
+          title: '藥品專利佈局與開發策略',
+          format: '講座 · 半天',
+          audience: '類新藥／505(b)(2) 開發者、藥廠 BD 與 IP 人員',
+          body: [
+            '改良型新藥的處境很特殊：技術上站在別人的肩膀上，法律上卻要證明自己夠不一樣。難的不是拿到專利，是在原廠的專利叢林裡找到一條真的走得通、而且上市後守得住的路。',
+            '這堂課處理路線選擇的問題——哪些改良路徑在專利上還有空間、哪些看起來可行但上市那天會被擋下來，以及台灣廠商在這條路上特有的限制。',
+          ],
+          fit: '適合已選定標的、正在決定改良方向，或準備進入國際市場的開發團隊。',
+        },
+        {
+          title: '細胞治療專利佈局與說明書實作',
+          format: '工作坊 · 3.5 小時',
+          audience: '細胞治療新創、醫院細胞治療團隊',
+          body: [
+            '細胞治療的專利困難不在「要不要申請」，而在產品與製程分不開、說明書寫不到可據以實施的程度、以及各國對可專利標的的界線不一致。',
+            '這個工作坊處理實際下筆的問題：手上的實驗數據，哪些寫得進說明書、要怎麼寫，以及寫完之後這件專利在別人眼中值多少。',
+          ],
+          fit: '適合已有臨床前或早期臨床數據、正要開始佈局或準備下一輪募資的團隊。',
+        },
+        {
+          title: '醫療機構智財講座',
+          format: '講座 · 90 分鐘',
+          audience: '醫院醫師、研究人員、臨床試驗與研發團隊',
+          body: [
+            '臨床現場最常見的不是「沒有值得保護的東西」，而是「有，但錯過了」——論文先發表了、研討會先講了、跟廠商談過了才想到專利。',
+            '這場講座處理醫療人員實際會遇到的判斷點：什麼時候該想到 IP、專利以外還有哪些保護方式，以及一個技術要怎麼從論文變成可以授權出去的資產。',
+          ],
+          fit: '已在醫學中心實際開講。適合醫院研發單位、教學部門或臨床試驗中心安排院內場次。',
+        },
+        {
+          title: '醫療器材 IP 策略',
+          format: '講座',
+          audience: '醫材廠商、醫材新創、研發與法規人員',
+          body: [
+            '醫材的 IP 難處跟藥品相反：產品週期短、迭代快，專利還沒下來產品已經改版；而且結構、演算法、使用方法、外觀分屬不同的保護工具。',
+            '這堂課處理配置問題——在有限的時間與預算裡，哪些該申請專利、哪些用設計或商標接住、哪些其實不值得保護，以及法規查驗登記與專利佈局的時序怎麼對齊。',
+          ],
+          fit: '適合正在準備第一件產品送審，或產品線開始擴張的醫材團隊。',
+        },
+        {
+          title: 'BioPharma IP Strategy — 生醫產業 IP 策略總覽',
+          format: '講座 · 中文／英文雙版本',
+          audience: '生醫產業從業人員、國際場合',
+          body: [
+            '這是進入縱深課程之前的地圖。生醫產業的 IP 邏輯跟一般製造業不一樣——保護期與開發期高度重疊、法規審查與專利佈局互相牽動、真正的價值往往在授權而不是自己上市。',
+            '這場講座把整個產業的 IP 遊戲規則走一遍，讓聽眾在進入細節之前，先知道自己站在哪裡。',
+          ],
+          fit: '備有完整英文版本，可用於國際研討會、外籍團隊內訓，或跨國公司的台灣據點。',
+        },
+        {
+          title: '企業 IP 治理系列',
+          format: '講座或顧問導入 · 場次可組合 · 不限產業',
+          audience: '企業經營層、投資人、IP 與法務主管',
+          body: [
+            '這一系列處理的是經營層的問題，不是工程師的問題：我們的 IP 到底值不值錢、該投多少資源、現在這個組合經得起檢驗嗎。',
+            '三個常見切角——用盡職調查的標準對自己的組合做一次壓力測試；釐清品質管理與創新管理為什麼在組織裡常常打架；以及換成投資人的視角，重新看自己的 IP 報表。',
+          ],
+          fit: '適合正在準備募資或併購、剛被投資人問倒過，或內部一直說不清楚 IP 該歸誰管的公司。',
+        },
+      ],
+      recordTitle: '授課紀錄',
+      recordDesc: '已於醫學中心、大學及企業內部開課。',
+      ctaTitle: '洽詢開課',
+      ctaDesc: '請說明對象、人數、希望的場次長度與時間範圍，我們會回覆可行的排期。',
+      ctaButton: '洽詢開課',
+    },
     footer: {
       social: '社群連結',
       linkedinCompany: 'LinkedIn 國際官方專頁',
@@ -131,6 +208,7 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       about: 'Why Us',
       blog: 'Insights',
       podcast: 'Podcast',
+      training: 'Training',
       contact: 'Consultation',
     },
     home: {
@@ -235,6 +313,82 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
         { title: 'High-Value Patent Screening', description: 'Identify the truly valuable patents in your hand, concentrate resources on maintenance, and discard ineffective assets.' },
         { title: 'Strategic Sandbox Simulation', description: 'Simulate the best layout combinations under different M&A scenarios; no more decision-making by gut feeling.' },
       ]
+    },
+    training: {
+      title: 'Training & Lectures',
+      subtitle: 'Each session works through one concrete decision. No general overviews.',
+      intro: [
+        'These courses come out of problems we meet repeatedly in practice — drawn from actual portfolio work, due diligence and licensing negotiations rather than restated textbooks.',
+      ],
+      scheduleNote: 'Scheduling by enquiry. Limited sessions each quarter.',
+      coursesLabel: 'Course Modules',
+      courses: [
+        {
+          title: 'Pharmaceutical Patent Strategy & Development',
+          format: 'Lecture · Half day',
+          audience: '505(b)(2) and improved-therapeutic developers, pharma BD and IP teams',
+          body: [
+            'Improved therapeutics sit in an unusual position: technically they stand on someone else\u2019s shoulders, legally they must prove they are different enough. The hard part is not obtaining a patent — it is finding a route through the originator\u2019s thicket that actually works and still holds after launch.',
+            'This session works through route selection: which improvement paths still have patent space, which look viable but get blocked on launch day, and the constraints specific to Taiwanese developers.',
+          ],
+          fit: 'For teams that have chosen a target and are deciding how to differentiate, or preparing to enter international markets.',
+        },
+        {
+          title: 'Cell Therapy Patents & Specification Drafting',
+          format: 'Workshop · 3.5 hours',
+          audience: 'Cell therapy startups, hospital cell therapy teams',
+          body: [
+            'The difficulty in cell therapy is not whether to file. It is that product and process cannot be separated, that specifications rarely reach the enablement standard, and that jurisdictions draw the line on patentable subject matter differently.',
+            'This workshop deals with what actually goes on the page: which of your experimental data belongs in the specification, how to write it, and what the resulting patent is worth in someone else\u2019s eyes.',
+          ],
+          fit: 'For teams with preclinical or early clinical data, beginning to build a portfolio or preparing a funding round.',
+        },
+        {
+          title: 'IP for Medical Institutions',
+          format: 'Lecture · 90 minutes',
+          audience: 'Hospital physicians, researchers, clinical trial and R&D teams',
+          body: [
+            'The common problem in a clinical setting is not the absence of something worth protecting. It is having it and missing the moment — the paper published, the conference talk given, the conversation with a manufacturer held, before anyone thought about patents.',
+            'This lecture covers the judgement calls clinicians actually face: when IP should come to mind, what protection exists beyond patents, and how a technique becomes an asset that can be licensed out.',
+          ],
+          fit: 'Already delivered at a medical centre. Suitable for hospital research offices, teaching departments and clinical trial centres.',
+        },
+        {
+          title: 'Medical Device IP Strategy',
+          format: 'Lecture',
+          audience: 'Device manufacturers, device startups, R&D and regulatory teams',
+          body: [
+            'Device IP runs opposite to pharma: product cycles are short and iteration fast, so the product has changed before the patent issues — and structure, algorithm, method of use and appearance each fall to a different protection tool.',
+            'This session deals with allocation: within a fixed budget and timeline, what deserves a patent, what design rights or trade marks can catch instead, what is not worth protecting at all, and how regulatory clearance and patent filing should be sequenced.',
+          ],
+          fit: 'For teams preparing a first submission, or expanding an existing product line.',
+        },
+        {
+          title: 'BioPharma IP Strategy — Industry Overview',
+          format: 'Lecture · Chinese and English versions',
+          audience: 'Biopharma professionals, international audiences',
+          body: [
+            'The map before the deep dives. IP logic in biopharma differs from general manufacturing: protection and development overlap heavily, regulatory review and patent strategy pull on each other, and the real value usually sits in licensing rather than going to market alone.',
+            'This lecture walks through the industry\u2019s IP rules end to end, so an audience knows where it stands before going into detail.',
+          ],
+          fit: 'A full English version is available for international conferences, English-speaking teams, or the Taiwan sites of multinational companies.',
+        },
+        {
+          title: 'Corporate IP Governance Series',
+          format: 'Lecture or advisory rollout · Modular · Any industry',
+          audience: 'Executives, investors, IP and legal leads',
+          body: [
+            'This series addresses management questions rather than engineering ones: is our IP actually worth anything, how much should we spend on it, and would this portfolio survive scrutiny.',
+            'Three angles — stress-testing your own portfolio against due diligence standards; understanding why quality management and innovation management so often collide inside an organisation; and reading your IP position the way an investor reads it.',
+          ],
+          fit: 'For companies preparing to raise or be acquired, recently caught out by an investor question, or unable to settle internally who owns IP.',
+        },
+      ],
+      recordTitle: 'Teaching Record',
+      recordDesc: 'Delivered at medical centres, universities and in-house corporate programmes.',
+      ctaTitle: 'Enquire About a Session',
+      ctaDesc: 'Tell us the audience, group size, preferred session length and timeframe, and we will come back with what can be scheduled.',
+      ctaButton: 'Enquire',
     },
     footer: {
       social: 'Connect',

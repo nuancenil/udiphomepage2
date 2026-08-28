@@ -36,6 +36,7 @@ export interface LocalizedContent {
     services: string;
     ipDecisionLab: string;
     ptaxial: string;
+    training: string;
     about: string;
     blog: string;
     podcast: string;
@@ -94,6 +95,25 @@ export interface LocalizedContent {
     features: { title: string; description: string }[];
     claim?: string;
     claimEn?: string;
+  };
+  training: {
+    title: string;
+    subtitle: string;
+    intro: string[];
+    scheduleNote: string;
+    coursesLabel: string;
+    courses: {
+      title: string;
+      format: string;
+      audience: string;
+      body: string[];
+      fit: string;
+    }[];
+    recordTitle: string;
+    recordDesc: string;
+    ctaTitle: string;
+    ctaDesc: string;
+    ctaButton: string;
   };
   decisionLab: {
     title: string;

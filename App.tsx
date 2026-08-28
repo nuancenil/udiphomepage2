@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import PTAxial from './pages/PTAxial';
 import DecisionLab from './pages/DecisionLab';
+import Training from './pages/Training';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import About from './pages/About';
@@ -34,6 +35,7 @@ const App: React.FC = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/training" element={<Training />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} />
             
