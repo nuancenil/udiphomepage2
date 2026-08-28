@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { content, posts } from '../data';
 import { ArrowRight, Cpu, ShieldCheck, Terminal, ChevronRight, Layout as LayoutIcon, BarChart3, Binary, ScanSearch, AlertTriangle, GitBranch } from 'lucide-react';
 import GeometricPattern from '../components/GeometricPattern';
-import { BrandCurveLine, TechGrid } from '../components/BrandGraphics';
+import { BrandCurveLine, TechGrid, SeedBackdrop } from '../components/BrandGraphics';
 
 const Home: React.FC = () => {
   const { lang } = useLanguage();
@@ -13,47 +13,114 @@ const Home: React.FC = () => {
   const t_dl = content[lang].decisionLab;
   const recentPosts = posts.slice(0, 3);
 
+  // Hero tracks. Rotates on its own; pauses while the pointer is over the hero,
+  // and takes a short breather after a manual pick before resuming.
+  const slides = t.heroSlides;
+  const [slide, setSlide] = React.useState(0);
+  const [hover, setHover] = React.useState(false);
+  const [snooze, setSnooze] = React.useState(false);
+  const snoozeRef = React.useRef<number | undefined>(undefined);
+  const active = slides[slide];
+  const paused = hover || snooze;
+
+  const pick = (i: number) => {
+    setSlide(i);
+    setSnooze(true);
+    window.clearTimeout(snoozeRef.current);
+    snoozeRef.current = window.setTimeout(() => setSnooze(false), 15000);
+  };
+
+  React.useEffect(() => () => window.clearTimeout(snoozeRef.current), []);
+
+  React.useEffect(() => {
+    console.log('[Carousel] Effect running. paused:', paused, 'slides.length:', slides.length);
+    if (paused || slides.length < 2) {
+      console.log('[Carousel] Skipping: paused or slides.length < 2');
+      return;
+    }
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+      console.log('[Carousel] Skipping: prefers-reduced-motion is enabled');
+      return;
+    }
+    console.log('[Carousel] Starting 7000ms interval rotation');
+    const id = window.setInterval(
+      () => {
+        console.log('[Carousel] Rotating to next slide');
+        setSlide((i) => (i + 1) % slides.length);
+      },
+      7000
+    );
+    return () => window.clearInterval(id);
+  }, [paused, slides.length]);
+
   return (
     <div className="animate-fade-in bg-brand-light">
       
-      {/* 1. HERO - High Impact Landing */}
-      <section className="relative min-h-[95vh] flex items-center overflow-hidden">
+      {/* 1. HERO - two positioning tracks, manually switchable */}
+      <section
+        className="relative min-h-[95vh] flex items-center overflow-hidden"
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
         <div className="absolute inset-0 z-0">
-          <TechGrid className="opacity-25" />
-          <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-brand-primary/10 rounded-full blur-[150px] animate-pulse"></div>
+          <SeedBackdrop
+            className="-right-40 top-1/2 -translate-y-1/2 w-[620px] h-[700px]"
+            color="rgba(160,157,149,0.07)"
+            rotate={-10}
+          />
           <BrandCurveLine className="absolute inset-0 w-full h-full opacity-40" />
         </div>
 
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full pt-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-9">
-              <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 border border-brand-dark/10 rounded-full bg-white/60 backdrop-blur-sm shadow-sm">
-                 <div className="w-1.5 h-1.5 bg-brand-orange rounded-full animate-pulse"></div>
-                 <span className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-brand-dark/60">
-                   {t.heroTag}
-                 </span>
+
+              {/* Track switcher — both tracks always legible, no hidden second slide */}
+              <div
+                role="tablist"
+                aria-label={lang === 'zh' ? '主軸切換' : 'Positioning tracks'}
+                className="flex flex-wrap items-center gap-2 mb-10"
+              >
+                {slides.map((s, i) => (
+                  <button
+                    key={i}
+                    role="tab"
+                    aria-selected={i === slide}
+                    onClick={() => pick(i)}
+                    className={`px-4 py-1.5 rounded-full border text-[10px] font-mono tracking-[0.2em] uppercase transition-colors duration-500 ${
+                      i === slide
+                        ? 'border-brand-dark/25 bg-white text-brand-dark shadow-sm'
+                        : 'border-brand-dark/10 bg-white/40 text-brand-dark/45 hover:text-brand-dark/75'
+                    }`}
+                  >
+                    {s.tag}
+                  </button>
+                ))}
               </div>
-              
-              <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[100px] font-serif font-medium text-brand-dark mb-10 leading-[1] tracking-tight whitespace-pre-line">
-                {t.heroTitle}
-              </h1>
-              
-              <p className="text-xl md:text-2xl lg:text-3xl text-brand-warm font-light max-w-3xl mb-12 leading-relaxed">
-                {t.heroSubtitle}
-                <span className="block text-lg md:text-xl mt-6 text-brand-dark/70 font-sans border-l-2 border-brand-orange/40 pl-8 leading-relaxed italic">
-                  {t.heroDesc}
-                </span>
-              </p>
-              
-              <div className="flex flex-wrap gap-6">
-                <Link to="/contact" className="group flex items-center gap-6 px-12 py-6 bg-brand-dark text-white rounded-full hover:bg-brand-orange transition-all duration-500 shadow-2xl hover:-translate-y-1">
-                  <span className="text-[14px] font-bold tracking-widest uppercase font-mono">{lang === 'zh' ? '預約檢測' : 'Book a Consultation'}</span>
-                  <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
-                </Link>
-                <Link to="/about" className="group flex items-center gap-4 px-10 py-6 text-brand-dark border border-brand-dark/10 rounded-full hover:bg-white transition-all font-bold tracking-widest uppercase text-xs">
-                  {t.ctaButton}
-                </Link>
+
+              <div key={slide} className="animate-fade-in">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-serif font-medium text-brand-dark mb-10 leading-[1.16] tracking-[0.02em] whitespace-pre-line max-w-[20ch]">
+                  {active.title}
+                </h1>
+
+                <p className="text-xl md:text-2xl text-brand-warm font-light max-w-3xl mb-12 leading-relaxed">
+                  {active.subtitle}
+                  <span className="block text-lg md:text-xl mt-6 pt-6 border-t border-brand-warm/25 text-brand-dark/70 font-sans font-light leading-relaxed">
+                    {active.desc}
+                  </span>
+                </p>
+
+                <div className="flex flex-wrap gap-6">
+                  <Link to={active.ctaTo} className="group flex items-center gap-6 px-12 py-6 bg-brand-dark text-white rounded-full hover:bg-brand-orange transition-colors duration-500 shadow-xl">
+                    <span className="text-[13px] tracking-[0.2em] uppercase font-mono">{active.ctaLabel}</span>
+                    <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform duration-500" />
+                  </Link>
+                  <Link to={active.altTo} className="group flex items-center gap-4 px-10 py-6 text-brand-dark border border-brand-dark/10 rounded-full hover:bg-white transition-colors duration-500 tracking-[0.2em] uppercase text-xs">
+                    {active.altLabel}
+                  </Link>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -61,22 +128,18 @@ const Home: React.FC = () => {
 
       {/* 1.5. CASE NOTES - evidence, shown before claims */}
       <section className="py-28 bg-brand-dark text-white relative overflow-hidden border-b border-white/5">
-        <div className="absolute inset-0 z-0 opacity-10">
-          <TechGrid />
-        </div>
+        <SeedBackdrop className="-right-32 -top-24 w-[540px] h-[600px]" rotate={-12} />
+
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
 
           <div className="max-w-3xl mb-16">
-            <div className="inline-flex items-center gap-2 mb-6 px-3 py-1 border border-brand-orange/30 rounded-full bg-brand-orange/10">
-              <span className="w-1.5 h-1.5 bg-brand-orange rounded-full animate-pulse"></span>
-              <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-brand-orange">
-                {t.caseNotes.eyebrow}
-              </span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-white">
+            <span className="block text-[10px] font-mono tracking-[0.28em] uppercase text-brand-primary mb-8">
+              {t.caseNotes.eyebrow}
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6 leading-tight text-white tracking-[0.04em]">
               {t.caseNotes.title}
             </h2>
-            <p className="text-brand-light/60 leading-relaxed text-lg">
+            <p className="text-brand-light/55 leading-relaxed text-lg font-light">
               {t.caseNotes.subtitle}
             </p>
           </div>
@@ -86,34 +149,34 @@ const Home: React.FC = () => {
               <Link
                 key={i}
                 to={`/blog/${c.postId}`}
-                className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-10 hover:bg-white/[0.07] hover:border-brand-orange/30 transition-all duration-500 flex flex-col"
+                className="group bg-white/[0.04] border border-white/10 rounded-lg p-10 hover:bg-white/[0.07] hover:border-white/25 transition-colors duration-500 flex flex-col"
               >
-                <span className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-brand-primary mb-6">
+                <span className="text-[10px] font-mono tracking-[0.22em] uppercase text-brand-primary mb-6">
                   {c.tag}
                 </span>
-                <h3 className="text-2xl font-serif font-bold text-white mb-8 leading-snug">
+                <h3 className="text-2xl font-serif font-medium text-white mb-8 leading-snug tracking-[0.03em]">
                   {c.title}
                 </h3>
 
-                <div className="space-y-6 flex-grow">
-                  <p className="text-brand-light/70 leading-relaxed pl-5 border-l border-white/15">
+                <div className="flex-grow">
+                  <p className="text-brand-light/55 leading-relaxed font-light text-[15px]">
                     {c.situation}
                   </p>
-                  <p className="text-white/90 leading-relaxed pl-5 border-l-2 border-brand-orange">
+                  <p className="text-white/90 leading-relaxed font-light mt-5 pt-5 border-t border-white/10">
                     {c.reading}
                   </p>
                 </div>
 
-                <span className="mt-10 inline-flex items-center gap-3 text-[11px] font-mono font-bold tracking-widest uppercase text-brand-orange">
+                <span className="mt-10 inline-flex items-center gap-3 text-[11px] font-mono tracking-[0.2em] uppercase text-white/50 group-hover:text-brand-orange transition-colors duration-500">
                   {t.caseNotes.readMore}
-                  <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform duration-500" />
                 </span>
               </Link>
             ))}
           </div>
 
           <div className="mt-12">
-            <Link to="/blog" className="inline-flex items-center gap-3 text-white/50 hover:text-brand-orange transition-colors text-xs font-mono tracking-widest uppercase">
+            <Link to="/blog" className="inline-flex items-center gap-3 text-white/40 hover:text-white/70 transition-colors text-[11px] font-mono tracking-[0.2em] uppercase">
               {t.caseNotes.allLink}
               <ArrowRight size={14} />
             </Link>

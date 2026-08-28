@@ -43,6 +43,16 @@ export interface LocalizedContent {
     contact: string;
   };
   home: {
+    heroSlides: {
+      tag: string;
+      title: string;
+      subtitle: string;
+      desc: string;
+      ctaLabel: string;
+      ctaTo: string;
+      altLabel: string;
+      altTo: string;
+    }[];
     heroTag: string;
     heroTitle: string;
     heroSubtitle: string;

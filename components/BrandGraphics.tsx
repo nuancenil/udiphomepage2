@@ -1,5 +1,5 @@
 import React from 'react';
-import { PebbleShape } from './BrandLogo';
+import { PebbleShape, BrandMark } from './BrandLogo';
 
 // The signature thin orange arc seen on Page 1, 3, 11, 14
 export const BrandCurveLine: React.FC<{ className?: string; flipped?: boolean }> = ({ className = "", flipped = false }) => {
@@ -23,6 +23,23 @@ export const BrandCurveLine: React.FC<{ className?: string; flipped?: boolean }>
     </svg>
   );
 };
+
+
+// B.04 輔助圖形 — the seed mark as a large, cropped, low-contrast background element.
+// Brand guide: the seed may be freely cropped, scaled and rotated, and placed large
+// and calm behind content. Never stretched, squashed or distorted (aspect is preserved).
+export const SeedBackdrop: React.FC<{
+  className?: string;
+  color?: string;
+  rotate?: number;
+}> = ({ className = "", color = "rgba(255,255,255,0.045)", rotate = 0 }) => (
+  <div className={`pointer-events-none absolute ${className}`} aria-hidden="true">
+    <BrandMark
+      className="w-full h-full"
+      style={{ color, transform: `rotate(${rotate}deg)` }}
+    />
+  </div>
+);
 
 // A scientific/technical grid background
 export const TechGrid: React.FC<{ className?: string }> = ({ className = "" }) => (

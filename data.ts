@@ -14,6 +14,28 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       contact: '預約諮詢',
     },
     home: {
+      heroSlides: [
+        {
+          tag: '技術資產化戰略',
+          title: '將技術願景，\n轉化為談判籌碼。',
+          subtitle: '以大型國際生醫授權案 IP 實務，協助研發階段企業，同步建構經得起嚴苛審查的 IP 資產。',
+          desc: '我們擅長在技術完全到位前，預判商業路徑，提前封裝具備防禦力的專利架構。確保您的研發成果在面對資本市場時，是具體的資產，而非模糊的概念。',
+          ctaLabel: '預約檢測',
+          ctaTo: '/contact',
+          altLabel: '了解我們的戰法',
+          altTo: '/about',
+        },
+        {
+          tag: '專利申請與訴訟',
+          title: '取得、維護，\n以及權利受到挑戰時的攻防。',
+          subtitle: '台灣申請、國外申請與 PCT，舉發與行政救濟。',
+          desc: '從產業出發 量身打造專利佈局',
+          ctaLabel: '洽詢委任',
+          ctaTo: '/contact',
+          altLabel: '看解決方案',
+          altTo: '/services',
+        },
+      ],
       heroTag: '技術資產化戰略',
       heroTitle: '將技術願景，轉化為談判籌碼。',
       heroSubtitle: '以大型國際生醫授權案 IP 實務，協助研發階段企業，同步建構經得起嚴苛審查的 IP 資產。',
@@ -28,8 +50,8 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       },
       caseNotes: {
         eyebrow: '案例',
-        title: '與其聽我們說會什麼，不如看我們怎麼讀一份專利組合。',
-        subtitle: '兩篇都只用公開資料。專利號、法律狀態、結論，你可以自己查一遍。',
+        title: '從產業出發 為企業量身打造專屬佈局。',
+        subtitle: '從專利技術分析，預判商業競爭關鍵。',
         readMore: '讀完整分析',
         allLink: '看全部分析',
         items: [
@@ -235,6 +257,28 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       contact: 'Consultation',
     },
     home: {
+      heroSlides: [
+        {
+          tag: 'Technical Assetization Strategy',
+          title: 'Turning Technical Vision into Bargaining Chips.',
+          subtitle: 'Drawing on Large-Scale International Biomedical Licensing Experience to Build Scrutiny-Proof IP Assets for R&D Enterprises.',
+          desc: 'We specialize in anticipating business paths and pre-packaging defensive patent architectures before technology is fully matured. We ensure your R&D outcomes are concrete assets, not vague concepts, when facing the capital market.',
+          ctaLabel: 'Book a Consultation',
+          ctaTo: '/contact',
+          altLabel: 'How We Work',
+          altTo: '/about',
+        },
+        {
+          tag: 'Prosecution & Litigation',
+          title: 'Securing rights, maintaining them,\nand defending them when challenged.',
+          subtitle: 'Taiwan filings, foreign filings and PCT; invalidation actions and administrative appeals.',
+          desc: 'Mostly inbound work — foreign rights holders, with matters carrying through from filing into dispute.',
+          ctaLabel: 'Enquire',
+          ctaTo: '/contact',
+          altLabel: 'Solutions',
+          altTo: '/services',
+        },
+      ],
       heroTag: 'Technical Assetization Strategy',
       heroTitle: 'Turning Technical Vision into Bargaining Chips.',
       heroSubtitle: 'Drawing on Large-Scale International Biomedical Licensing Experience to Build Scrutiny-Proof IP Assets for R&D Enterprises.',
@@ -250,7 +294,7 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       caseNotes: {
         eyebrow: 'Case Notes',
         title: 'Rather than describe what we do, here is how we read a patent portfolio.',
-        subtitle: 'Both analyses use public records only. Every filing and every conclusion can be checked.',
+        subtitle: 'Both are written from public patent records; every filing is cited with its number and legal status.',
         readMore: 'Read the full analysis',
         allLink: 'All analyses',
         items: [

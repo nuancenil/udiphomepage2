@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { content } from '../data';
 import { ArrowRight, Clock, Users } from 'lucide-react';
-import { TechGrid } from '../components/BrandGraphics';
+import { SeedBackdrop } from '../components/BrandGraphics';
 
 const Training: React.FC = () => {
   const { lang } = useLanguage();
@@ -14,16 +14,13 @@ const Training: React.FC = () => {
 
       {/* Header */}
       <div className="bg-brand-dark text-brand-light py-24 relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10">
-          <TechGrid />
-        </div>
-        <div className="absolute top-0 right-[-10%] w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl"></div>
+        <SeedBackdrop className="-right-24 -top-16 w-[460px] h-[520px]" rotate={-8} />
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <span className="inline-block py-1.5 px-4 rounded-full bg-white/10 text-brand-secondary text-xs font-bold tracking-[0.2em] mb-8 uppercase">
             Training
           </span>
-          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6 text-white">{t.title}</h1>
-          <p className="text-xl md:text-2xl text-brand-warm font-light">{t.subtitle}</p>
+          <h1 className="text-5xl md:text-6xl font-serif font-medium mb-6 text-white tracking-[0.05em]">{t.title}</h1>
+          <p className="text-xl md:text-2xl text-brand-warm font-light tracking-[0.04em]">{t.subtitle}</p>
         </div>
       </div>
 
@@ -35,13 +32,13 @@ const Training: React.FC = () => {
             <p key={i} className="text-lg text-brand-dark/70 leading-relaxed mb-4">{p}</p>
           ))}
         </div>
-        <p className="text-center text-sm font-mono tracking-wide text-brand-orange mb-20">
+        <p className="text-center text-[13px] font-mono tracking-[0.16em] text-brand-warm mb-20">
           {t.scheduleNote}
         </p>
 
         {/* Section label */}
         <div className="flex items-center gap-4 mb-12">
-          <span className="text-[11px] font-mono font-bold tracking-[0.25em] uppercase text-brand-warm whitespace-nowrap">
+          <span className="text-[11px] font-mono tracking-[0.25em] uppercase text-brand-warm whitespace-nowrap">
             {t.coursesLabel}
           </span>
           <span className="h-[1px] flex-grow bg-brand-warm/20"></span>
@@ -52,9 +49,9 @@ const Training: React.FC = () => {
           {t.courses.map((c, i) => (
             <article
               key={i}
-              className="bg-white border border-brand-warm/10 rounded-2xl p-8 md:p-10 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
+              className="bg-white border border-brand-warm/15 rounded-lg p-8 md:p-10 shadow-sm hover:shadow-md transition-shadow duration-500"
             >
-              <h2 className="text-2xl md:text-[28px] font-serif font-bold text-brand-dark mb-5 leading-snug">
+              <h2 className="text-2xl md:text-[28px] font-serif font-medium text-brand-dark mb-5 leading-snug tracking-[0.04em]">
                 {c.title}
               </h2>
 
@@ -70,10 +67,10 @@ const Training: React.FC = () => {
               </div>
 
               {c.body.map((p, j) => (
-                <p key={j} className="text-brand-dark/75 leading-relaxed mb-4">{p}</p>
+                <p key={j} className="text-brand-dark/75 leading-relaxed font-light mb-4">{p}</p>
               ))}
 
-              <p className="text-sm text-brand-warm italic border-l-2 border-brand-orange/40 pl-5 mt-6">
+              <p className="text-sm text-brand-warm font-light mt-8 pt-5 border-t border-brand-warm/15">
                 {c.fit}
               </p>
             </article>
@@ -82,25 +79,23 @@ const Training: React.FC = () => {
 
         {/* Teaching record */}
         <div className="mt-20 pt-12 border-t border-brand-warm/20 text-center">
-          <h3 className="text-[11px] font-mono font-bold tracking-[0.25em] uppercase text-brand-warm mb-4">
+          <h3 className="text-[11px] font-mono tracking-[0.25em] uppercase text-brand-warm mb-4">
             {t.recordTitle}
           </h3>
-          <p className="text-xl font-serif text-brand-dark">{t.recordDesc}</p>
+          <p className="text-xl font-serif text-brand-dark tracking-[0.05em]">{t.recordDesc}</p>
         </div>
 
         {/* CTA */}
-        <div className="mt-16 bg-brand-dark rounded-3xl p-10 md:p-14 text-center relative overflow-hidden">
-          <div className="absolute inset-0 z-0 opacity-10">
-            <TechGrid />
-          </div>
+        <div className="mt-16 bg-brand-dark rounded-lg p-10 md:p-14 text-center relative overflow-hidden">
+          <SeedBackdrop className="-left-20 -bottom-24 w-[360px] h-[400px]" rotate={14} />
           <div className="relative z-10">
-            <h3 className="text-3xl font-serif font-bold text-white mb-4">{t.ctaTitle}</h3>
-            <p className="text-brand-light/70 leading-relaxed max-w-xl mx-auto mb-10">{t.ctaDesc}</p>
+            <h3 className="text-3xl font-serif font-medium text-white mb-4 tracking-[0.05em]">{t.ctaTitle}</h3>
+            <p className="text-brand-light/65 leading-relaxed font-light max-w-xl mx-auto mb-10">{t.ctaDesc}</p>
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-4 px-10 py-5 bg-brand-orange text-white rounded-full hover:bg-white hover:text-brand-dark transition-all duration-500 shadow-lg"
+              className="group inline-flex items-center gap-4 px-10 py-5 bg-brand-orange text-white rounded-full hover:bg-white hover:text-brand-dark transition-colors duration-500"
             >
-              <span className="text-[13px] font-bold tracking-widest uppercase font-mono">{t.ctaButton}</span>
+              <span className="text-[13px] tracking-[0.2em] uppercase font-mono">{t.ctaButton}</span>
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
