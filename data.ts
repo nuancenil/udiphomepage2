@@ -20,7 +20,7 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       ctaButton: '了解我們的戰法',
       sections: {
         services: '解決方案',
-        ptaxial: 'PTAxial® 市場淨空',
+        ptaxial: 'PTAxial® 軸向剖析',
         decisionLab: 'IP Decision Lab™ 估值預演',
         insights: '實戰洞見',
         trackRecord: '核心能力',
@@ -39,9 +39,10 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       subtitle: '將技術成果轉化為具備商業價值的法律資產',
       items: [
         { title: '併購估值預演', description: '透過 IP Decision Lab™ 模擬併購情境，提前優化 IP 組合，確保資產價值在收購方 (Acquirer) 評估中得到完整體現。' },
-        { title: '市場淨空分析', description: '利用 PTAxial® 分析競爭對手專利佈局，規劃迴避路徑，降低產品進入國際市場的法律風險。' },
+        { title: '專利佈局剖析', description: '以 PTAxial® 逐件拆解競爭對手的專利佈局——法律狀態、有效期限、家族涵蓋、技術要素——為進入國際市場的決策提供可查證的基礎。' },
         { title: '盡職調查 (DD) 準備', description: '協助企業進行模擬 DD，預先識別並修補潛在漏洞，確保在機構投資人 (Institutional Investors) 審查時展現資產的完整性。' },
         { title: '授權談判支持', description: '提供數據分析與法律論點，協助企業在面對國際藥廠 (Big Pharma) 時，具備對等的談判基礎。' },
+        { title: '商標與品牌保護', description: '從品牌命名、商標檢索到全球註冊佈局，協助企業建立可長期維護的品牌資產，降低跨國市場的侵權與搶註風險。' },
       ]
     },
     about: {
@@ -87,16 +88,18 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
     },
     ptaxial: {
       title: 'PTAxial®',
-      subtitle: '市場淨空與授權障礙掃除工具',
+      subtitle: '專利情報的軸向剖析',
       desc: [
-        '知己知彼，百戰不殆。PTAxial® 專注於掃除授權路上的所有障礙。',
-        '深度解析競爭對手 (Competitors) 佈局，找出迴避空間與反擊機會，確保產品自由營運 (FTO)。'
+        '地圖止於表象，判斷始於切面。',
+        'PTAxial® 把檢索結果逐件、逐層拆解成可查證的結構化情報——法律狀態、有效期限、家族佈局、技術要素——每一格都能追溯到原始專利。'
       ],
       features: [
-        { title: '競爭對手雷達', description: '一鍵掃描市場地雷，找出技術空白區，精準卡位。' },
-        { title: '訴訟風險預警', description: '提早發現潛在的專利訴訟風險，避開億元級的賠償陷阱。' },
-        { title: '迴避設計導航', description: '被大廠專利卡住？我們幫你找出技術繞道方案，安全突圍。' },
-      ]
+        { title: '逐件拆解', description: '到期日與 PTA 計算、法律狀態、專利家族摺疊。每件專利的關鍵事實一次攤開，全部連回原始文件。' },
+        { title: '技術要素標記', description: 'AI 只做結構化抽取：標記具體的技術手段與材料，不寫敘事評論、不給無法驗證的風險分數。' },
+        { title: '可下鑽的視圖', description: '時間軸與 2-D 矩陣裡每個點都是真實專利號；可排序、可篩選、可註記、可匯出完整 CSV。' },
+      ],
+      claim: '突破性進展，從來不在地圖上。',
+      claimEn: 'No map shows the breakthrough.'
     },
     decisionLab: {
       title: 'IP Decision Lab™',
@@ -138,7 +141,7 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       ctaButton: 'Our Strategy',
       sections: {
         services: 'Solutions',
-        ptaxial: 'PTAxial® Market Clearance',
+        ptaxial: 'PTAxial® Axial Analysis',
         decisionLab: 'IP Decision Lab™ Valuation',
         insights: 'Insights',
         trackRecord: 'Core Expertise',
@@ -157,9 +160,10 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       subtitle: 'Building Monetizable Business Assets, Not Just Filing Patents',
       items: [
         { title: 'M&A Valuation Simulation', description: 'Using IP Decision Lab™ to simulate M&A scenarios, optimizing IP portfolios to ensure maximum premium when facing Acquirers.' },
-        { title: 'Market Clearance & Obstacle Removal', description: 'Using PTAxial® to scan for competitor patent mines, identifying design-around paths to clear a safe passage to international markets.' },
+        { title: 'Patent Landscape Breakdown', description: 'Using PTAxial® to break down competitor portfolios patent by patent — legal status, term, family coverage, technical elements — giving market-entry decisions a verifiable foundation.' },
         { title: 'Rigorous Due Diligence (DD) Escort', description: 'Investors auditing soon? We simulate DD to patch vulnerabilities, ensuring impeccable asset value before Institutional Investors.' },
         { title: 'Cross-border Licensing Bargaining Chips', description: 'What is your tech worth? We use data and legal leverage to give you confidence against Big Pharma in negotiations.' },
+        { title: 'Trademark & Brand Protection', description: 'From naming and clearance searches to global registration strategy, we help you build a defensible brand asset and reduce infringement and squatting risk across international markets.' },
       ]
     },
     about: {
@@ -205,16 +209,18 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
     },
     ptaxial: {
       title: 'PTAxial®',
-      subtitle: 'Market Clearance & Licensing Obstacle Removal Tool',
+      subtitle: 'The Axial View of Patent Intelligence',
       desc: [
-        'Know yourself and your enemy. PTAxial® focuses on clearing all obstacles on the path to licensing.',
-        'Deeply analyze Competitor layouts to find design-around spaces and counter-attack opportunities, ensuring Freedom to Operate (FTO).'
+        'Maps stop at the surface. Judgment begins at the section.',
+        'PTAxial® breaks your search results down patent by patent, layer by layer, into verifiable structured intelligence — legal status, term, family coverage, technical elements — every cell traceable to the original document.'
       ],
       features: [
-        { title: 'Competitor Radar', description: 'One-click scan for market mines, identifying white spaces for precise positioning.' },
-        { title: 'Litigation Risk Warning', description: 'Early detection of potential patent litigation risks to avoid multi-million dollar compensation traps.' },
-        { title: 'Design Around Navigation', description: 'Blocked by Big Pharma patents? We help you find technical detours for a safe breakout.' },
-      ]
+        { title: 'Patent-by-Patent Breakdown', description: 'Expiry and PTA calculation, legal status, family folding. The key facts of every patent laid out at once, all linked back to source documents.' },
+        { title: 'Technical Element Tagging', description: 'AI does structured extraction only: tagging concrete means and materials. No narrative commentary, no unverifiable risk scores.' },
+        { title: 'Drillable Views', description: 'Every point in the timeline and 2-D matrix is a real patent number — sortable, filterable, annotatable, exportable as full CSV.' },
+      ],
+      claim: 'No map shows the breakthrough.',
+      claimEn: ''
     },
     decisionLab: {
       title: 'IP Decision Lab™',
@@ -241,6 +247,303 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
 
 export const posts: BlogPost[] = [
   {
+    id: 'autologous-scale-moat',
+    title: {
+      zh: '誰說自體細胞治療沒有規模經濟？——規模要看產線，護城河要看製程',
+      en: 'No Economies of Scale in Autologous Cell Therapy? Scale Lives Elsewhere — and So Does the Moat'
+    },
+    date: '2026-08-11',
+    excerpt: {
+      zh: '「一人一批」砍掉的是批次規模經濟，不是規模本身。從產線、固定成本與地理佈局重新定位自體細胞的規模，再用製程專利的四種態樣與三方對照法，檢驗一家公司的護城河是真是假、出場是否從第一天就設計好。',
+      en: 'One patient, one batch kills batch economics — not scale itself. Where scale actually lives in autologous cell therapy, and how to test a company\'s moat and exit design through the structure of its process patents.'
+    },
+    tags: ['Cell Therapy', 'Regenerative Medicine', 'Patent Strategy', 'CDMO'],
+    content: {
+      zh: `
+> 一篇寫給台灣的自體細胞治療商業模式思考：規模、護城河、出場。
+
+## 一、從一個迷思開場：「一人一批」等於沒有規模？
+
+反對細胞治療「產品化」的人常說：自體細胞「一人一批」，本來就沒有規模經濟，做成產品意義不大。這個說法只對了一半。
+
+「一人一批」確實砍掉了批次規模經濟——異體（allogeneic）一批打幾百人的槓桿，自體沒有。但不等於自體不需要規模。自體的規模長在別的地方，而且——這是本文要說的重點——規模長在哪裡，護城河就長在哪裡。
+
+## 二、自體的規模長在三個地方
+
+### 產能規模
+
+不是靠 batch size，而是靠平行產線數與自動化封閉系統。CAR-T 全球都是自體，Kymriah、Yescarta 照樣做成數十億美元的生意——只是毛利率遠低於一般生物藥，競爭點落在 turnaround time 與製造失敗率。換句話說，當批次槓桿消失，競爭軸心就從「一批做多少」移到「同時開幾條線、多快交付、失敗率壓多低」——競爭的主戰場從實驗室搬進了工廠。
+
+### 固定成本攤提
+
+QC 放行、法規、品保、無塵室折舊都是固定成本。病人數少的時候，每人分攤極高。這是自體最現實的規模壓力——案量不足的 GTP 場所，連折舊都攤不平。
+
+### 地理規模是負的
+
+vein-to-vein 的冷鏈時限讓你不能一廠供全球，必須佈區域衛星廠——這是規模「不利」因素，也正是 CDMO 在自體這塊有結構性機會的原因：與其每家公司自建攤不平的產能，不如把平行產線、自動化與 QC 體系集中到代工者手上。
+
+## 三、真正的分岔：不是大規模 vs. 小規模，是價值可否轉讓
+
+把規模看清楚之後，再生醫療雙軌的商業分岔就不是「大規模 vs. 小規模」，而是：
+
+* 服務軌（再生醫療技術，醫療法系）：自費醫療服務，收入 = 病人數 × 單價。天花板是產能與病人數，且價值鎖在 SOP、醫師關係、營業秘密裡——不可轉讓。
+* 製劑軌（再生醫療製劑，藥事法系）：PIC/S GMP 製造、完成二期後可申請五年暫時性藥證。天花板是藥證範圍，但藥證是可授權、可里程碑分潤、可跨國、可上資產負債表的標的——價值可以脫離你本人存在。
+
+## 四、雙法上路後的擠壓與機會
+
+2026 年 1 月 1 日雙法施行，把這個分岔從理論變成了現實的壓力。
+
+新法把特管時代的舒適圈收掉了：再生醫療技術的執行，原則上須先完成人體試驗（僅恩慈條款與既往核准項目除外）。「免臨床試驗就能收費」的年代結束，純服務型玩家被迫面對證據門檻。
+
+另一頭，製劑軌的誘因被打開：目前至少十家台灣公司在免疫細胞、幹細胞、外泌體三大平台推進二、三期臨床，搶五年暫時性藥證；市場把 2026 稱為「再生醫療商業化元年」，看好臨床試驗、國際授權、CDMO 三引擎同時點火，台灣有機會從臨床研究基地轉型為亞太授權與代工樞紐。
+
+但日本的教訓值得引以為戒：條件性核准若配上不夠扎實的證據，最終傷害的是整個領域的公信力——暫時性藥證是加速器，不是免死金牌。
+
+## 五、台灣的適配規模與出場機制：把公司經營成大廠的「前段工廠」
+
+講完擠壓與機會，要回答一個更根本的問題：台灣公司到底該做多大的生意？答案藏在兩個殘酷的數字裡：台灣內需市場只有兩千三百萬人，自費醫療撐得起服務軌的現金流，撐不起一家全球藥廠的量體；而台灣資本市場的胃納，也撐不起單一藥物數億美元的全球三期。硬要「從研發做到全球上市」，多半死在三期的資本谷底。
+
+台灣的適配規模，是「開發到 POC（概念驗證）」——台灣生技圈對這類打法有個行之有年的名字：NRDO（no research, development only）。從臨床前做到二期概念驗證，單案成本落在數千萬美元級——這是台灣資本市場付得起的量級，也恰好是價值曲線最陡的一段：資產在 de-risk 前後的估值差距最大，前段開發者賺的就是這段風險溢價。雙法的五年暫時性藥證正好嵌合這個規模：二期完成後先在本地商業化，收現金流、累積真實世界數據（RWD），把資料包做厚——技術軌的服務現金流加上暫時性藥證的 RWD，構成台灣特有的「自我補貼式開發」模式，一路把資產養到最好賣的狀態。
+
+出場機制有三條路，全球市場已經給出定價：
+
+1. 授權出海（license-out）：upfront + milestone + royalty 的階梯式變現。台灣生技已有智擎、合一等授權先例可循；細胞治療領域的國際行情更清楚——大廠願意為「已去險的資產」付出天價：Gilead 以 119 億美元收購 Kite、BMS（Celgene）以 90 億美元收購 Juno、Bayer 收購 BlueRock，買的都是 POC 後的乾淨資料包，而不是早期概念。
+2. 整案出售（M&A）：POC 後連公司帶資產賣給大廠。對股東是最乾脆的出場，前提是公司從第一天就長成「買方盡職調查會喜歡的樣子」。
+3. 授權全球、保留亞太；或「授權出海、製造留台」：把全球權利讓給大廠，保留亞太市場權利或製造供應權——後者直接呼應前文的 CDMO 結構性機會，讓台灣廠成為大廠全球供應鏈裡的區域衛星，出場之後還能持續收製造財。
+
+而「賣得掉」大概不只是運氣。我們沒有親手賣過一家公司，但從 Kite、Juno、BlueRock 這些已成交的案例回推，被買走的資產有一些共同的長相——整理下來，是四個要件：
+
+### 要件一：IP 佈局要對買方說出一個符合現實的敘事
+
+你沒辦法預測每一個買方的盡職調查清單——大藥廠、中型收購方、財務型買家，各有各的重點。你能做的，是讓佈局自己講出一個站得住的商業故事：全球組合物項、用途項加製程家族，對得上「這個資產要在哪裡賣、怎麼賣」。如果專利只停在台灣，再好的故事都講不下去——嘴上說要做全球生意，專利卻出不了海，這正是後文三方對照要抓的「言行錯位」。
+
+### 要件二：資料規格從第一天就對準國際
+
+美台並行 IND、CMC 文件照 FDA/PMDA 規格撰寫；POC 的主要終點要選硬終點（hard endpoint）——總存活期、客觀腫瘤反應這類量得出來、不靠主觀判讀的指標，而不是問卷分數或未經驗證的生物標記。軟終點做出來的「有效」，買方沒辦法拿去說服自己的三期團隊和法規單位；硬終點的 POC 才是「可以直接接手推三期」的資產，而不是需要重做的實驗。
+
+### 要件三：適應症做出不可替代性
+
+選大廠管線的缺口，或亞洲高盛行、歐美藥廠難以自行開發的病種。
+
+這兩條路對應的出場設計並不相同：補管線缺口的全球性疾病，才適合「授權全球、保留亞太」；亞洲高盛行的病種，市場重心本來就在亞太，保留亞太等於把最值錢的權利留在手上賣不掉，更合理的組合是整案出售，或授權全球、改留製造供應權。換句話說，要件三挑的是「開發端」的不可替代性——病人、數據、成本優勢在你手上；出場時該保留什麼，要跟著價值的地理分布走，不是套公式。
+
+### 要件四：FTO（自由實施）與授權鏈要乾淨
+
+這裡的授權鏈不只指專利，還包括細胞來源的商業利用授權。《再生醫療法》第 20 條要求取得組織細胞時的告知事項必須涵蓋「預期可能衍生之利益及歸屬」，第 18 條並授權主管機關就細胞保存庫的「商業運用利益回饋」訂定辦法。
+
+換句話說，提供者的同意書有沒有明確涵蓋營利組織的商業利用、利益歸屬有沒有交代清楚，直接決定這批細胞衍生的產品能不能安心賣。這對異體（allogeneic）產品與細胞庫尤其致命：若建庫時的同意書版本沒有涵蓋商業化用途，整個產品線的法律基礎就有瑕疵——國際上早有提供者事後發現細胞商業價值而興訟的前例，HeLa 細胞爭議是最著名的一課。
+
+大廠的盡職調查一定會翻同意書，授權鏈的完整性本身就是資產的一部分。
+
+> 一句話總結：台灣公司該把自己經營成大廠的前段工廠——把「零到 POC」這段做到世界級，把「POC 到全球上市」這段，賣給付得起的人。
+
+## 六、競爭軸心在製造，護城河就該用製程技術相關專利來驗
+
+把前面的邏輯串起來：自體細胞的競爭軸心在製造（turnaround time、失敗率、平行產線、自動化），那麼一家公司的護城河是真是假，就要看它的製程能力有沒有變成可主張、可轉讓的資產——這正是專利分析的用武之地。
+
+方法專利常被誤解為容易繞道的弱資產，但強方法項有明確的態樣，判讀時可以逐一對照：
+
+1. **必經瓶頸型**：步驟由生物學或法規決定，想做出合格產品就繞不開——例如 T 細胞活化擴增的關鍵刺激條件、法規實質要求的無血清培養或封閉系統製程。當「繞道」等於「做不出可放行的產品」，方法項就是硬資產。
+2. **侵權可偵測型**：使用該方法會在終產品留下可驗證的指紋（細胞表型、表觀遺傳特徵），或必然揭露於對手的 CMC 文件與藥證申報中。細胞治療是高度法規化產業，對手的申報文件本身就是舉證來源——「查得到侵權」的方法項才談得上主張。
+3. **參數窗口型**：以實驗數據證明只有特定參數區間（細胞密度、培養天數、氧濃度、轉導條件——也就是 ICH 語彙裡的關鍵製程參數 CPP）能穩定產出臨床合格品，並把整個可行窗口寫進 claim。替代參數做不出合格品，繞道就失去意義。
+4. **佈局網型**：方法項搭配製法界定物請求項（product-by-process）與組合物項互相支撐，讓對手繞開一項也躲不開整張網。
+
+一個實務注記：參數窗口要不要走專利，得先用態樣二檢驗——申請專利等於公開整個窗口。若對手照用你的參數區間，你卻在終產品驗不出來、對方的申報文件也不會揭露到這個層級，那這個窗口就該留在營業秘密裡，而不是寫進 claim 白白送給對手。
+
+經典案例足以說明方法專利的上限：Genentech 的 Cabilly 專利（抗體共表現製造方法）讓幾乎整個抗體藥產業付了數十年權利金；山中伸彌的 iPSC 重編程方法專利成為整個領域的授權基礎。方法專利不是不能打，是要挑對態樣。
+
+對自體細胞治療與 CDMO 而言，這四種態樣尤其關鍵：當你的生意本質就是製程，製程專利就是你的組合物專利。一家 CDMO 若握有必經瓶頸型的自動化製程 claim，它收的就不只是代工費，還有整個產業的過路費。
+
+這不是紙上推演。MaxCyte 靠流式電穿孔卡在 CRISPR 療法的 GMP 製造環節——全球第一個 CRISPR 藥 Casgevy 就是用它的平台製造，Vertex 透過名為「策略平台授權」的合約（Strategic Platform License，SPL）付里程碑與費用，同型授權簽了二十多家。但誠實地說，它收租靠的不是專利單打：是核心專利、SPL 合約、儀器綁定三者互相咬合——專利守住方法，合約鎖住商業條件，儀器讓替換成本高到不值得繞。
+
+拿它的一件核心專利對照上面的態樣，會看得更清楚。US10316335B2 的 claim，把電穿孔轉染加上「至少 1.6 mg/ml 的 G418、篩選至少 6 天」的條件窗口寫進權利範圍——形式上是標準的參數窗口型。但用態樣二一驗就露出短板：這種製程步驟，在對手的終產品上幾乎驗不出來。claim 形式漂亮、侵權偵測性弱——這正是 MaxCyte 要用合約與儀器補位的原因，也是四種態樣要「逐一對照」而不是「套上一種就安心」的原因。
+
+[US10316335B2 專利原文](https://patents.google.com/patent/US10316335B2)
+
+這反而是重點：製程護城河的完全體，本來就是專利加合約加設備的組合拳；專利是其中可主張、可轉讓的那一層，也是讓另外兩層站得住的地基。
+
+想看它的組合長什麼樣子：
+
+[開啟 MaxCyte 的 PTAxial® 報告](https://node-service-869582453108.asia-east1.run.app/r/hazellin007/maxcyte_20260811.html)
+
+## 七、把專利串回商業模式：三方對照的判讀法
+
+判讀重點不是單看 claim 類型論強弱——方法項不等於弱、組合物項不等於強——而是檢驗專利結構與公司宣稱的商業模式是否一致：
+
+* 走服務軌的公司，合理佈局是製程方法專利 + 營業秘密 + GTP 場所能力，地理上以台灣為主——方法專利搭配 know-how，正是服務生意該有的保護。
+* 走 CDMO 的公司，製程與自動化方法專利是核心資產——製造方法 claim 可以直接對競爭對手的產線主張權利，而且最好長成上述四種態樣。
+* 走製劑軌的公司，則應該看到物質組合項、適應症用途項，以及跟著目標市場走的 US/JP/EP/CN 家族——藥證資產要跨國變現，專利必須先到位。
+
+工具上，Google Patents、Lens.org、TIPO 全球專利檢索系統（GPSS）搭配分類號（A61K 35/28 間質幹細胞、A61K 35/17 T/NK 細胞、A61K 35/545 iPSC/ES、C12N 5/0775、C12N 5/0783 細胞培養、A61L 27 組織工程支架）加公司名，就能拉出對照清單。
+
+真正的警訊是言行錯位：對資本市場說要做新藥、談國際授權，專利清單裡卻只有台灣本地的培養方法項、沒有組合物項、家族不出海——專利在誠實地告訴你，它實質上是一家醫療服務公司。反過來，自稱深耕服務的公司若默默佈局全球組合物專利，野心比說出口的大。宣稱 × claim 結構 × 家族地理，三方一對照，答案就出來了。
+
+## 八、結語：規模靠產線，價值靠專利，出場靠設計
+
+自體細胞不是沒有規模經濟，是規模搬了家——從批次搬到產線，從實驗室搬到工廠，從一廠供全球變成區域衛星佈局。雙法上路後，服務軌的證據門檻升高、製劑軌的誘因打開，擠壓與機會同時發生。而台灣的適配打法，不是把自己撐成全球藥廠，是把「零到 POC」做到世界級，然後在價值曲線最陡的那個點出場。
+
+在這個新格局裡，判斷一家公司值不值得認真看待，就問三個問題：它的規模策略有沒有對準真正的競爭軸心（產能、turnaround、失敗率）？它的製程能力有沒有變成好主張的專利資產（四種態樣）？它有沒有從第一天就把自己經營成賣得掉的樣子（全球 IP 佈局、國際規格資料包、乾淨的 FTO）？第一題決定它能不能活下來，第二題決定它的價值能不能脫離它本人存在，第三題決定這個價值最終能不能變現。
+
+下一篇，我們會用同一套方法拆另一種原型：在別人的原創地圖上找缺口、把缺口變成收費站的 Cellectis。
+
+---
+
+參考資料：
+
+理律法律事務所，[〈再生醫療雙法於2026年1月1日正式施行〉](https://www.leeandli.com/TW/NewslettersDetail/7564.htm)
+
+台灣光鹽生物科技學苑，[〈再生醫療雙法上路 細胞治療馬上旺〉](https://www.biotech-edu.com/20260224-regenerative-medicine-act/)
+
+報導者，[〈歷經10年，再生醫療雙法三讀！適用對象、細胞使用、倫理規範，6大焦點一次看〉](https://www.twreporter.org/a/regenerative-medicine-legislation-passed)
+
+---
+
+本文僅供策略討論，不構成法律意見。
+      `,
+      en: `
+> Thinking through the autologous cell therapy business model at Taiwan's size: scale, moat, exit.
+
+## 1. Starting with a myth: does "one patient, one batch" mean no scale?
+
+Skeptics of turning cell therapy into a "product" often argue: autologous cells are made one batch per patient, so there are no economies of scale, and productization makes little sense. That argument is only half right.
+
+"One patient, one batch" does eliminate batch economies of scale — autologous therapy has none of the allogeneic leverage of dosing hundreds of patients from a single batch. But that does not mean autologous therapy has no need for scale. Its scale simply lives elsewhere — and, this is the point of this essay, wherever the scale lives is where the moat grows.
+
+## 2. The three places autologous scale actually lives
+
+### Capacity scale
+
+Not batch size, but the number of parallel production lines and automated closed systems. CAR-T is autologous everywhere in the world, and Kymriah and Yescarta still became multi-billion-dollar businesses — just with gross margins far below conventional biologics, and with competition centered on turnaround time and manufacturing failure rates. In other words, once batch leverage disappears, the axis of competition shifts from "how much per batch" to "how many lines run in parallel, how fast you deliver, how low you push the failure rate" — the main battlefield moves from the lab to the factory.
+
+### Fixed-cost amortization
+
+QC release, regulatory affairs, quality assurance, and cleanroom depreciation are all fixed costs. With few patients, the per-patient allocation is punishing. This is the most concrete scale pressure in autologous therapy — a GTP facility without sufficient case volume cannot even cover its own depreciation.
+
+### Geographic scale is negative
+
+Vein-to-vein cold-chain time limits mean one plant cannot serve the world; you must deploy regional satellite facilities. This is a scale disadvantage — and precisely why CDMOs have a structural opportunity in the autologous space: rather than every company building capacity it cannot amortize, it makes more sense to concentrate the parallel lines, automation, and QC systems in a contract manufacturer.
+
+## 3. The real fork: not large vs. small, but whether value is transferable
+
+Once scale is seen clearly, the commercial fork in Taiwan's dual-track regenerative medicine regime is not "large scale vs. small scale" but:
+
+* Service track (regenerative medical technology, under the medical-practice regime): out-of-pocket medical services, where revenue = patients × price. The ceiling is capacity and patient count, and the value is locked in SOPs, physician relationships, and trade secrets — non-transferable.
+* Product track (regenerative medicinal products, under the pharmaceutical regime): PIC/S GMP manufacturing, with a five-year conditional marketing approval available after Phase II. The ceiling is the scope of the license — but a license is an asset that can be out-licensed, milestone-shared, taken across borders, and put on a balance sheet. Its value can exist apart from you.
+
+## 4. After Taiwan's dual acts: squeeze and opportunity at once
+
+On January 1, 2026, Taiwan's dual regenerative medicine acts took effect, turning this fork from theory into real pressure.
+
+The new law closed the comfort zone of the Special Regulation era: performing regenerative medical technologies now, in principle, requires completed human trials first (with exceptions only for compassionate use and previously approved items). The era of "charging patients without clinical trials" is over; pure service players must now clear an evidence bar.
+
+On the other side, the product track's incentives opened up: at least ten Taiwanese companies are advancing Phase II and III trials across the immune-cell, stem-cell, and exosome platforms, racing for the five-year conditional license. The market calls 2026 the "first year of regenerative medicine commercialization," expecting three engines — clinical trials, international licensing, and CDMO — to fire at once, giving Taiwan a chance to evolve from a clinical-research base into an Asia-Pacific licensing and manufacturing hub.
+
+But Japan's experience is a cautionary tale: conditional approval built on thin evidence ultimately damages the credibility of the entire field. The conditional license is an accelerator, not a free pass.
+
+## 5. Taiwan's right size and exit design: run the company as big pharma's front-end factory
+
+With the squeeze and the opportunity on the table, a more fundamental question remains: how big a business should a Taiwanese company actually build? The answer hides in two unforgiving numbers. Taiwan's domestic market is only 23 million people — out-of-pocket medicine can sustain a service-track cash flow, but not the volume of a global pharmaceutical company. And Taiwan's capital market cannot absorb the hundreds of millions of dollars a single drug's global Phase III demands. Companies that insist on going "from R&D all the way to global launch" mostly die in the Phase III capital valley.
+
+Taiwan's right size is "develop to POC (proof of concept)" — a play Taiwan's biotech scene has long had a name for: NRDO, "no research, development only." From preclinical through Phase II proof of concept, per-asset cost lands in the tens of millions of dollars — a magnitude Taiwan's capital market can actually fund, and precisely the steepest segment of the value curve: the valuation gap before and after de-risking is at its widest, and the front-end developer earns exactly that risk premium. The dual acts' five-year conditional license fits this size perfectly: commercialize locally after Phase II, collect cash flow, accumulate real-world data (RWD), and thicken the data package — service-track cash flow plus conditional-license RWD together form Taiwan's distinctive "self-subsidized development" model, raising the asset to its most sellable state.
+
+There are three exit routes, and the global market has already priced them:
+
+1. License-out: staged monetization through upfront, milestone, and royalty payments. Taiwan's biotech sector already has precedents such as PharmaEngine and Oneness Biotech; in cell therapy the international benchmarks are even clearer — big pharma pays top dollar for de-risked assets: Gilead acquired Kite for US$11.9 billion, BMS (Celgene) acquired Juno for US$9 billion, and Bayer acquired BlueRock. In every case, what they bought was a clean, post-POC data package — not an early-stage concept.
+2. Outright sale (M&A): after POC, sell the company together with the asset. The cleanest exit for shareholders — provided the company has grown, from day one, into the shape a buyer's due-diligence team likes.
+3. License globally, keep Asia-Pacific; or license out, keep manufacturing in Taiwan: hand global rights to big pharma while retaining Asia-Pacific market rights or the manufacturing supply role — the latter maps directly onto the CDMO structural opportunity above, making the Taiwanese plant a regional satellite in the acquirer's global supply chain, still collecting manufacturing revenue after the exit.
+
+And "sellable" is probably not just luck. We have never sold a company ourselves — but working backwards from the deals that did close, Kite, Juno, BlueRock, the acquired assets share a recognizable shape. Distilled, four requirements:
+
+### Requirement 1: An IP layout that tells the buyer a story consistent with reality
+
+You cannot anticipate every buyer's diligence checklist — big pharma, mid-size acquirers, and financial buyers each weigh things differently. What you can do is make the portfolio itself tell a business story that holds up: global composition-of-matter claims, use claims, plus a process family, matching where and how the asset will actually be sold. If the patents stop at Taiwan, no story survives — claiming a global business while the patents never leave the island is exactly the mismatch the three-way cross-check below is built to catch.
+
+### Requirement 2: Data specs aligned to international standards from day one
+
+Parallel US-Taiwan INDs, CMC documents written to FDA/PMDA specifications — and a POC built on hard endpoints: overall survival, objective tumor response, outcomes that are measured rather than interpreted, not questionnaire scores or unvalidated biomarkers. A "positive" result on a soft endpoint is something a buyer cannot take to its own Phase III team or regulators; a hard-endpoint POC is an asset they can carry straight into Phase III — not an experiment that needs redoing.
+
+### Requirement 3: Indications with irreplaceability
+
+Pick the gaps in big pharma pipelines, or diseases highly prevalent in Asia that US and European companies find hard to develop themselves.
+
+The two point to different exit designs. "License globally, keep Asia-Pacific" fits a global disease that fills a pipeline gap; for an Asia-prevalent disease, the market's center of gravity is already Asia-Pacific — keeping it would mean holding back the most valuable rights — so the better fit is an outright sale, or licensing globally while keeping the manufacturing supply role instead. In other words, Requirement 3 selects for irreplaceability on the development side — the patients, the data, and the cost advantage are in your hands; what you keep at exit should follow the geography of the value, not a formula.
+
+### Requirement 4: Clean FTO and a clean chain of consent
+
+The chain here means more than patents — it includes commercial-use consent for the cell source. Article 20 of Taiwan's Regenerative Medicine Act requires that when tissues and cells are obtained, donors must be informed of the "expected derived benefits and their attribution"; Article 18 authorizes the competent authority to regulate "commercial benefit-sharing" by cell banks.
+
+In other words, whether the donor consent form clearly covers commercial use by for-profit entities, and whether benefit attribution is spelled out, directly determines whether products derived from those cells can be sold with confidence. This is especially lethal for allogeneic products and cell banks: if the consent version in use when the bank was built did not cover commercialization, the entire product line stands on a defective legal foundation. Internationally, there are precedents of donors suing after discovering the commercial value of their cells — the HeLa controversy is the most famous lesson.
+
+Big pharma's due diligence will read the consent forms. The integrity of the chain of consent is itself part of the asset.
+
+> In one sentence: a Taiwanese company should run itself as big pharma's front-end factory — make "zero to POC" world-class, and sell "POC to global launch" to someone who can afford it.
+
+## 6. If competition centers on manufacturing, test the moat with process-technology patents
+
+Now wire the logic together: if the competitive axis of autologous cell therapy is manufacturing (turnaround time, failure rate, parallel lines, automation), then whether a company's moat is real depends on whether its process capability has become claimable, transferable assets — and this is exactly where patent analysis earns its keep.
+
+Method patents are often dismissed as weak assets that are easy to design around. But strong method claims have identifiable profiles, and you can check for them one by one:
+
+1. **Unavoidable-bottleneck**: the steps are dictated by biology or regulation, and no compliant product can be made without them — for example, the critical stimulation conditions for T-cell activation and expansion, or serum-free culture and closed-system processing effectively required by regulators. When "designing around" means "failing to make a releasable product," the method claim is a hard asset.
+2. **Detectable-infringement**: using the method leaves a verifiable fingerprint in the final product (cell phenotype, epigenetic signatures), or must necessarily be disclosed in a competitor's CMC documents and regulatory filings. Cell therapy is a heavily regulated industry — the opponent's own filings become a source of evidence. Only method claims whose infringement can actually be detected are worth asserting.
+3. **Parameter-window**: experimental data proving that only a specific parameter window (cell density, culture days, oxygen tension, transduction conditions — the critical process parameters, or CPPs, in ICH terms) reliably yields clinically releasable product — with the entire feasible window written into the claims. If alternative parameters cannot produce a passing product, designing around loses its meaning.
+4. **Layered-web**: method claims supported by product-by-process claims and composition claims, so that escaping one claim does not escape the web.
+
+A practical note: whether a parameter window belongs in a patent at all should first pass the profile-2 test — filing publishes the entire window. If a competitor could run inside your window without you being able to prove it (nothing detectable in the final product, and their filings never disclose parameters at that granularity), the window belongs in a trade secret, not in a claim handed to the competition.
+
+Classic cases show the ceiling of what method patents can do: Genentech's Cabilly patents (antibody co-expression manufacturing) collected royalties from nearly the entire antibody industry for decades, and Shinya Yamanaka's iPSC reprogramming method patents became the licensing foundation of an entire field. Method patents are not unwinnable — you just have to pick the right profile.
+
+For autologous cell therapy and CDMOs, these four profiles matter most: when your business is the process, process patents are your composition patents. A CDMO holding unavoidable-bottleneck claims on automated processing collects not just manufacturing fees, but tolls from the entire industry.
+
+This is not a thought experiment. MaxCyte sits at the GMP manufacturing chokepoint of CRISPR therapies with its flow electroporation platform — Casgevy, the world's first CRISPR medicine, is manufactured on it, and Vertex pays milestones and fees under a Strategic Platform License (SPL), one of twenty-plus such deals. But to be honest about how the rent is actually collected: it is not patents alone. Core patents, SPL contracts, and instrument lock-in mesh together — the patents hold the method, the contracts set the commercial terms, and the installed instruments make switching too costly to bother.
+
+Hold one of its core patents against the profiles above and the picture sharpens. The claims of US10316335B2 combine electroporation transfection with a condition window written into the claim — at least 1.6 mg/ml of G418, selection for at least 6 days: textbook parameter-window form. Run it through profile 2, though, and the weakness shows: a process step like this is nearly impossible to detect in a competitor's final product. Elegant claim form, weak infringement detectability — which is exactly why MaxCyte backfills with contracts and instruments, and why the four profiles are a checklist to run one by one, not a menu where matching one is enough.
+
+[US10316335B2 on Google Patents](https://patents.google.com/patent/US10316335B2)
+
+And that is precisely the point: a process moat in its complete form is patents plus contracts plus machines; the patent layer is the part that can be asserted and transferred — and the foundation that lets the other two layers hold.
+
+To see what the portfolio looks like:
+
+[Open the MaxCyte PTAxial® report](https://node-service-869582453108.asia-east1.run.app/r/hazellin007/maxcyte_20260811.html)
+
+## 7. Wiring patents back into the business model: the three-way cross-check
+
+The point is not to rank claim types in the abstract — method does not equal weak, composition does not equal strong — but to test whether the patent structure is consistent with the business model the company claims to pursue:
+
+* A service-track company should reasonably show process method patents + trade secrets + GTP facility capability, geographically centered on Taiwan — method patents plus know-how are exactly the right protection for a service business.
+* A CDMO should hold process and automation method patents as core assets — manufacturing method claims can be asserted directly against a competitor's production line, and ideally they grow into the four profiles above.
+* A product-track company should show composition-of-matter claims, indication-specific use claims, and US/JP/EP/CN families that follow its target markets — for the license asset to monetize across borders, the patents must get there first.
+
+On tools: Google Patents, Lens.org, and TIPO's Global Patent Search System (GPSS), combined with classification codes (A61K 35/28 mesenchymal stem cells, A61K 35/17 T/NK cells, A61K 35/545 iPSC/ES, C12N 5/0775 and C12N 5/0783 cell culture, A61L 27 tissue-engineering scaffolds) plus a company name, will pull up a comparison list.
+
+The real red flag is a say-do mismatch: telling the capital market the plan is new drugs and international licensing, while the patent list holds only Taiwan-local culture-method claims, no composition claims, and families that never leave the island — the patents are honestly telling you this is, in substance, a medical services company. Conversely, a self-described service company quietly filing global composition patents has more ambition than it admits. Stated model × claim structure × family geography: cross-check the three, and the answer falls out.
+
+## 8. Conclusion: scale in the factory, value in the patents, exit in the design
+
+Autologous cell therapy does not lack economies of scale — the scale has moved: from batch to production line, from lab to factory, from one-plant-serves-the-world to regional satellites. With the dual acts in force, the service track's evidence bar rises while the product track's incentives open up — squeeze and opportunity arriving together. Taiwan's fitting play is not to inflate itself into a global pharma, but to make "zero to POC" world-class and exit at the steepest point of the value curve.
+
+In this new landscape, to judge whether a company deserves serious attention, ask three questions. Is its scale strategy aimed at the real competitive axis (capacity, turnaround, failure rate)? Has its process capability become patent assets worth asserting (the four profiles)? And has it run itself, from day one, into a sellable shape (global IP coverage, international-spec data package, clean FTO)? The first decides whether it survives; the second decides whether its value can exist apart from it; the third decides whether that value is ever realized.
+
+Next up: the same method, applied to a different archetype — Cellectis, which found a gap in someone else's original map and turned it into a tollbooth.
+
+---
+
+References:
+
+Lee and Li, Attorneys-at-Law, [The Dual Regenerative Medicine Acts Took Effect on January 1, 2026 (Chinese)](https://www.leeandli.com/TW/NewslettersDetail/7564.htm)
+
+Taiwan Kuang Yen Biotech Academy, [Regenerative Medicine Dual Acts Take Effect (Chinese)](https://www.biotech-edu.com/20260224-regenerative-medicine-act/)
+
+The Reporter, [Ten Years in the Making: Taiwan Passes the Regenerative Medicine Dual Acts (Chinese)](https://www.twreporter.org/a/regenerative-medicine-legislation-passed)
+
+---
+
+This article is provided for strategic discussion and does not constitute legal advice.
+      `
+    }
+  },
+  {
     id: 'capstan-in-vivo-cart-ip',
     title: {
       zh: '從專利讀懂一樁併購：Capstan 的專利組合，透露了 in vivo CAR-T 的什麼？',
@@ -254,8 +557,6 @@ export const posts: BlogPost[] = [
     tags: ['CAR-T', 'Patent Strategy', 'Drug Delivery', 'Biotech'],
     content: {
       zh: `
-# 從專利讀懂一樁併購：Capstan 的專利組合，透露了 in vivo CAR-T 的什麼？
-
 2025 年年中，免疫學領域最受矚目的交易之一完成：一家大型藥廠以最高 21 億美元，收購了一家臨床階段的小型生技公司。這家公司的核心只有一個大膽的構想——不在工廠裡製造 CAR-T 細胞，而是直接在病人「體內」重編程免疫細胞。
 
 對市場來說，頭條是價格。但對我們而言，更值得細讀的文件，是它的專利組合。因為當盡職調查團隊為一家研發階段公司估值時，他們買的不是新聞稿，而是一組法律權利——並且會逐一檢視這些權利，是否真的保護了他們要買的東西。
@@ -266,11 +567,11 @@ export const posts: BlogPost[] = [
 
 Capstan 的六件專利落在三個層次。
 
-**遞送層（4 件）** 組合的重心在脂質奈米顆粒（LNP）與可電離脂質化學：一件已核准的脂質奈米顆粒配方與組合物專利（有效，權利期約至 2044 年）；可電離陽離子脂質、以及受限型可電離陽離子脂質配方的相關申請案；以及一件審查中的 PEG 脂質與脂質奈米顆粒申請案。
+遞送層（4 件） 組合的重心在脂質奈米顆粒（LNP）與可電離脂質化學：一件已核准的脂質奈米顆粒配方與組合物專利（有效，權利期約至 2044 年）；可電離陽離子脂質、以及受限型可電離陽離子脂質配方的相關申請案；以及一件審查中的 PEG 脂質與脂質奈米顆粒申請案。
 
-**酬載層（1 件）** 一件 RNA 轉染申請案——也就是遞送載體所攜帶的遺傳指令。
+酬載層（1 件） 一件 RNA 轉染申請案——也就是遞送載體所攜帶的遺傳指令。
 
-**標靶與細胞工程層（1 件）** 一件審查中的「免疫工程放大」申請案（權利期約至 2045 年）——這一層最貼近 in vivo CAR-T 的作用機制本身。
+標靶與細胞工程層（1 件） 一件審查中的「免疫工程放大」申請案（權利期約至 2045 年）——這一層最貼近 in vivo CAR-T 的作用機制本身。
 
 合起來看，這不是六件互不相干的發明，而是要讓「體內細胞重編程」成立所必須擁有的三件事：一個能在體內存活、抵達正確細胞的載體；一段進入細胞後真正做事的酬載；以及一層把「遞送」轉化為「療法」的標靶設計。
 
@@ -302,11 +603,9 @@ in vivo CAR-T 的論點之所以吸引人，正是因為它拿掉了讓傳統細
 
 ---
 
-*本文以 Eudaimonia IP 的專利情報平台 PTAxial® 製作。專利狀態與專利家族資料依 2026 年 7 月公開紀錄，僅供策略討論，不構成法律意見。*
+本文以 Eudaimonia IP 的專利情報平台 PTAxial® 製作。專利狀態與專利家族資料依 2026 年 7 月公開紀錄，僅供策略討論，不構成法律意見。
       `,
       en: `
-# Reading an Acquisition Through Its Patents: What Capstan's Portfolio Reveals About In Vivo CAR-T
-
 In mid-2025, one of the most closely watched deals in immunology closed: a large pharmaceutical acquirer paid up to US$2.1 billion for a small, clinical-stage biotech built around a single, audacious idea—engineering CAR-T cells *inside* the patient's body rather than in a manufacturing facility.
 
 For the market, the headline was the price. For us, the more interesting document was the patent portfolio. Because when a due-diligence team values a research-stage company, they are not buying press releases—they are buying a set of legal rights, and reading whether those rights actually protect the thing being sold.
@@ -317,11 +616,11 @@ So we ran Capstan Therapeutics' portfolio through PTAxial®, our patent-intellig
 
 Capstan's six filings fall into three layers.
 
-**Delivery (4 filings).** The bulk of the portfolio sits in lipid nanoparticle (LNP) and ionizable-lipid chemistry: a granted patent on lipid nanoparticle formulations and compositions (active, term to ~2044); filings on ionizable cationic lipids and on a constrained ionizable cationic lipid formulation; and a pending application on PEG-lipids and lipid nanoparticles.
+Delivery (4 filings). The bulk of the portfolio sits in lipid nanoparticle (LNP) and ionizable-lipid chemistry: a granted patent on lipid nanoparticle formulations and compositions (active, term to ~2044); filings on ionizable cationic lipids and on a constrained ionizable cationic lipid formulation; and a pending application on PEG-lipids and lipid nanoparticles.
 
-**Payload (1 filing).** An RNA transfection filing—the genetic instructions the vehicle carries.
+Payload (1 filing). An RNA transfection filing—the genetic instructions the vehicle carries.
 
-**Targeting and cell engineering (1 filing).** A pending application on immune engineering amplification (term to ~2045)—the layer closest to the in vivo CAR-T mechanism itself.
+Targeting and cell engineering (1 filing). A pending application on immune engineering amplification (term to ~2045)—the layer closest to the in vivo CAR-T mechanism itself.
 
 Read together, these are not six unrelated inventions. They are the three things you must own to make in vivo cell reprogramming work: a vehicle that survives the body and reaches the right cell, a payload that does the work once inside, and a targeting layer that turns delivery into a therapy.
 
@@ -353,7 +652,7 @@ Explore the complete interactive PTAxial® report behind this teardown — every
 
 ---
 
-*This analysis was produced using PTAxial®, Eudaimonia IP's patent-intelligence platform. Patent status and family data reflect public records as of July 2026 and are provided for strategic discussion, not legal advice.*
+This analysis was produced using PTAxial®, Eudaimonia IP's patent-intelligence platform. Patent status and family data reflect public records as of July 2026 and are provided for strategic discussion, not legal advice.
       `
     }
   },
@@ -371,8 +670,6 @@ Explore the complete interactive PTAxial® report behind this teardown — every
     tags: ['CDMO', 'Innovation', 'Quality Management'],
     content: {
       zh: `
-# 從代工到共創：CDMO / OEM / CRO 如何在品質不失控的前提下，長出自己的創新與 IP？
-
 多數 CDMO、OEM、CRO 都卡在同一個悖論裡：
 * 客戶要你又快又彈性
 * 法規與稽核要求你零失誤
@@ -421,8 +718,6 @@ Explore the complete interactive PTAxial® report behind this teardown — every
 [開啟線上表單（新分頁）](https://docs.google.com/forms/d/e/1FAIpQLSenXfe2G9g7gJmbxmlumwWHq1sszq5FHGQbktgbXZv8HUoNRw/viewform)
       `,
       en: `
-# From Outsourcing to Co-Creation: How CDMOs / OEMs / CROs Can Grow Their Own Innovation & IP Without Losing Control of Quality
-
 Most CDMOs, OEMs, and CROs are trapped in the same paradox:
 * Clients demand speed and flexibility
 * Regulations and audits demand zero mistakes
@@ -488,8 +783,6 @@ Please take 2–3 minutes to answer a few questions about your organization. Aft
     tags: ['ISO', 'Management', 'Strategy'],
     content: {
       zh: `
-# ISO 認證的原罪
-
 ## 證書陷阱
 
 當組織追求 ISO 認證時——無論是 ISO 9001 品質管理、ISO 56002 創新管理，還是任何其他標準——往往陷入了管理系統認證的「原罪」：**把證書誤認為轉型本身**。跨產業的研究揭示了一個超越特定標準的令人憂心模式：高層管理者承諾的是取得認證，而非從根本改變組織的運作方式。證書成了目的本身，成為向客戶和利害關係人展示的獎盃，而非組織真正文化轉變的證明。無論是品質卓越、創新文化還是環境責任，這都創造了同樣危險的假象——擁有系統化管理的表象，卻缺乏其實質內涵。
@@ -514,8 +807,6 @@ Monat, J. P., & Gannon, T. F. (2023)。〈Evaluation of ISO 9001 barriers in Man
 [https://www.worldscientific.com/doi/abs/10.1142/S2424862223500124](https://www.worldscientific.com/doi/abs/10.1142/S2424862223500124)
       `,
       en: `
-# Your ISO Certificate Is a Lie (And You Know It)?
-
 ## The Original Sin of ISO Certification: Why Every Standard Fails the Same Way
 
 ---
@@ -563,8 +854,6 @@ Monat, J. P., & Gannon, T. F. (2023). *Evaluation of ISO 9001 barriers in Manufa
     tags: ['Strategy', 'Trade Secret', 'IP Valuation'],
     content: {
       zh: `
-# 專利還是營業秘密？從「排他」到「獨有」的決策矩陣
-
 在 IP 策略諮詢中，客戶最常問的問題之一就是：「這項技術該申請專利，還是當作營業秘密？」
 
 傳統的回答通常依賴幾個簡單的法則：容易被逆向工程的申請專利，製程類的留作營業秘密。這在 20 年前或許適用，但在今日高度透明與數據化的研發環境下，這樣的二分法往往過於粗糙。
@@ -585,8 +874,6 @@ Eudaimonia IP 提倡使用更細緻的決策矩陣，考量維度包含：
 *欲了解更多關於我們的 IP Decision Lab™ 如何協助企業建構此矩陣，請聯繫我們。*
       `,
       en: `
-# Patent or Trade Secret? From "Exclusion" to "Exclusivity" Decision Matrix
-
 One of the most frequent questions in IP strategy consulting is: "Should we patent this technology or keep it as a trade secret?"
 
 Traditional answers often rely on simple rules of thumb: patent what can be reverse-engineered, keep processes as trade secrets. While this might have worked 20 years ago, in today's highly transparent and data-driven R&D environment, such dichotomy is often too crude.

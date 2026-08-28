@@ -9,7 +9,15 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [lang, setLang] = useState<Language>('zh');
+  // Default is zh; a ?lang=en / ?lang=zh query param overrides it,
+  // so external links (e.g. LinkedIn posts) can land on a specific language.
+  const [lang, setLang] = useState<Language>(() => {
+    if (typeof window !== 'undefined') {
+      const p = new URLSearchParams(window.location.search).get('lang');
+      if (p === 'en' || p === 'zh') return p;
+    }
+    return 'zh';
+  });
 
   return (
     <LanguageContext.Provider value={{ lang, setLang }}>

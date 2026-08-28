@@ -1,6 +1,12 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
+
+// Redirect legacy hash URLs (e.g. /#/blog/xxx shared before the router switch)
+// to their clean-path equivalents so old links keep working.
+if (typeof window !== 'undefined' && window.location.hash.startsWith('#/')) {
+  window.history.replaceState(null, '', window.location.hash.slice(1));
+}
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Services from './pages/Services';

@@ -16,7 +16,7 @@ const PTAxial: React.FC = () => {
         <div className="absolute top-0 right-[-10%] w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl"></div>
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <span className="inline-block py-1.5 px-4 rounded-full bg-white/10 text-brand-secondary text-xs font-bold tracking-[0.2em] mb-8 uppercase">
-            Strategic Tool
+            Axial Analysis
           </span>
           <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6 text-white">{t.title}</h1>
           <p className="text-2xl text-brand-warm font-light mb-10">{t.subtitle}</p>
@@ -47,6 +47,13 @@ const PTAxial: React.FC = () => {
             );
           })}
         </div>
+
+        {t.claim && (
+          <div className="text-center mt-24">
+            <p className="font-serif text-2xl font-semibold text-brand-dark tracking-[0.12em] mb-2">{t.claim}</p>
+            {t.claimEn && <p className="text-sm text-brand-warm italic tracking-[0.14em]">{t.claimEn}</p>}
+          </div>
+        )}
       </div>
     </div>
   );

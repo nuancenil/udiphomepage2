@@ -92,6 +92,8 @@ export interface LocalizedContent {
     subtitle: string;
     desc: string[];
     features: { title: string; description: string }[];
+    claim?: string;
+    claimEn?: string;
   };
   decisionLab: {
     title: string;

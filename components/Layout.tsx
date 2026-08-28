@@ -29,10 +29,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const navLinks = [
     { to: '/', label: t.home, type: 'internal' },
     { to: '/services', label: t.services, type: 'internal' },
-    { to: '/decision-lab', label: t.ipDecisionLab, type: 'internal' },
     { to: '/ptaxial', label: t.ptaxial, type: 'internal' },
     { to: '/blog', label: t.blog, type: 'internal' },
-    { to: 'https://podcasts.apple.com/tw/podcast/wisdom-ip-strategy/id1862406264', label: t.podcast, type: 'external' },
     { to: '/about', label: t.about, type: 'internal' },
     { to: '/contact', label: t.contact, type: 'internal' },
   ];
