@@ -59,44 +59,66 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 1.5. TRACK RECORD - High Impact Stat */}
-      <section className="py-24 bg-brand-dark text-white relative overflow-hidden border-b border-white/5">
+      {/* 1.5. CASE NOTES - evidence, shown before claims */}
+      <section className="py-28 bg-brand-dark text-white relative overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-10">
-             <TechGrid />
+          <TechGrid />
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div>
-                 <div className="inline-flex items-center gap-2 mb-6 px-3 py-1 border border-brand-orange/30 rounded-full bg-brand-orange/10">
-                    <span className="w-1.5 h-1.5 bg-brand-orange rounded-full animate-pulse"></span>
-                    <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-brand-orange">
-                      {t.sections.trackRecord}
-                    </span>
-                 </div>
-                 <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-white">
-                    {t.trackRecord.title}
-                 </h2>
-                 <p className="text-xl text-brand-warm/90 font-light mb-8 italic border-l-2 border-brand-orange pl-6">
-                    {t.trackRecord.subtitle}
-                 </p>
-                 <p className="text-brand-light/70 leading-relaxed max-w-xl text-lg">
-                    {t.trackRecord.desc}
-                 </p>
-              </div>
-              <div className="relative group">
-                 <div className="absolute inset-0 bg-brand-orange/20 blur-[80px] rounded-full group-hover:bg-brand-orange/30 transition-all duration-700"></div>
-                 <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 p-12 rounded-3xl space-y-6">
-                    {(t.trackRecord.points ?? []).map((point, i) => (
-                      <div key={i} className="flex items-center gap-5">
-                        <div className="w-8 h-8 rounded-lg bg-brand-orange/20 border border-brand-orange/30 flex items-center justify-center flex-shrink-0">
-                          <span className="text-brand-orange font-mono text-xs font-bold">0{i + 1}</span>
-                        </div>
-                        <span className="text-white font-serif text-xl">{point}</span>
-                      </div>
-                    ))}
-                 </div>
-              </div>
-           </div>
+
+          <div className="max-w-3xl mb-16">
+            <div className="inline-flex items-center gap-2 mb-6 px-3 py-1 border border-brand-orange/30 rounded-full bg-brand-orange/10">
+              <span className="w-1.5 h-1.5 bg-brand-orange rounded-full animate-pulse"></span>
+              <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-brand-orange">
+                {t.caseNotes.eyebrow}
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-white">
+              {t.caseNotes.title}
+            </h2>
+            <p className="text-brand-light/60 leading-relaxed text-lg">
+              {t.caseNotes.subtitle}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {t.caseNotes.items.map((c, i) => (
+              <Link
+                key={i}
+                to={`/blog/${c.postId}`}
+                className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-10 hover:bg-white/[0.07] hover:border-brand-orange/30 transition-all duration-500 flex flex-col"
+              >
+                <span className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-brand-primary mb-6">
+                  {c.tag}
+                </span>
+                <h3 className="text-2xl font-serif font-bold text-white mb-8 leading-snug">
+                  {c.title}
+                </h3>
+
+                <div className="space-y-6 flex-grow">
+                  <p className="text-brand-light/70 leading-relaxed pl-5 border-l border-white/15">
+                    {c.situation}
+                  </p>
+                  <p className="text-white/90 leading-relaxed pl-5 border-l-2 border-brand-orange">
+                    {c.reading}
+                  </p>
+                </div>
+
+                <span className="mt-10 inline-flex items-center gap-3 text-[11px] font-mono font-bold tracking-widest uppercase text-brand-orange">
+                  {t.caseNotes.readMore}
+                  <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-12">
+            <Link to="/blog" className="inline-flex items-center gap-3 text-white/50 hover:text-brand-orange transition-colors text-xs font-mono tracking-widest uppercase">
+              {t.caseNotes.allLink}
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+
         </div>
       </section>
 

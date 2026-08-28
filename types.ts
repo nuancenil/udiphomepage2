@@ -55,6 +55,20 @@ export interface LocalizedContent {
       insights: string;
       trackRecord: string;
     };
+    caseNotes: {
+      eyebrow: string;
+      title: string;
+      subtitle: string;
+      readMore: string;
+      allLink: string;
+      items: {
+        tag: string;
+        title: string;
+        situation: string;
+        reading: string;
+        postId: string;
+      }[];
+    };
     trackRecord: {
       title: string;
       subtitle: string;
