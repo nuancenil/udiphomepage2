@@ -17,9 +17,8 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       heroSlides: [
         {
           tag: '技術資產化戰略',
-          title: '知欲知求
-轉識成智',
-          subtitle: '以大型國際生醫授權案 IP 實務，協助研發階段企業，同步建構經得起嚴苛審查的 IP 資產。',
+          title: '將技術願景\n轉化為談判籌碼',
+          subtitle: '以國際生醫授權案 IP 實務，協助研發階段企業，同步建構經得起嚴苛審查的 IP 資產。',
           desc: '我們擅長在技術完全到位前，預判商業路徑，提前封裝具備防禦力的專利架構。確保您的研發成果在面對資本市場時，是具體的資產，而非模糊的概念。',
           ctaLabel: '預約檢測',
           ctaTo: '/contact',
@@ -28,7 +27,7 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
         },
         {
           tag: '專利申請與訴訟',
-          title: '取得、維護，\n以及權利受到挑戰時的攻防。',
+          title: '取得、維護\n以及權利受到挑戰時的攻防',
           subtitle: '台灣申請、國外申請與 PCT，舉發與行政救濟。',
           desc: '從產業出發 量身打造專利佈局',
           ctaLabel: '洽詢委任',
@@ -39,7 +38,7 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       ],
       heroTag: '技術資產化戰略',
       heroTitle: '將技術願景，轉化為談判籌碼。',
-      heroSubtitle: '以大型國際生醫授權案 IP 實務，協助研發階段企業，同步建構經得起嚴苛審查的 IP 資產。',
+      heroSubtitle: '以國際生醫授權案 IP 實務，協助研發階段企業，同步建構經得起嚴苛審查的 IP 資產。',
       heroDesc: '我們擅長在技術完全到位前，預判商業路徑，提前封裝具備防禦力的專利架構。確保您的研發成果在面對資本市場時，是具體的資產，而非模糊的概念。',
       ctaButton: '了解我們的戰法',
       sections: {
@@ -119,8 +118,8 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       ],
       founderTitle: '創辦人',
       founderContent: [
-        'Hazel C.F. Lin 具備大型生技授權案的 IP 實務管理經驗。',
-        '曾參與大型跨國生醫授權交易，熟悉國際藥廠與投資機構的盡職調查標準，致力於協助台灣生技企業建立與國際接軌的 IP 管理體系。'
+        'Hazel C.F. Lin 具備國際生技授權案的 IP 實務管理經驗。',
+        '曾參與跨國生醫授權交易，熟悉國際藥廠與投資機構的盡職調查標準，致力於協助台灣生技企業建立與國際接軌的 IP 管理體系。'
       ]
     },
     contact: {
@@ -485,7 +484,7 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       social: 'Connect',
       linkedinCompany: 'LinkedIn Global Official Page',
       linkedinShowcase: 'LinkedIn Taiwan Official Page',
-      slogan: 'Turn your technology into your strongest bargaining chip.'
+      slogan: 'Quest for Knowledge, Path to Insight'
     }
   }
 };
