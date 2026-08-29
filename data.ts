@@ -17,7 +17,8 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       heroSlides: [
         {
           tag: '技術資產化戰略',
-          title: '將技術願景，\n轉化為談判籌碼。',
+          title: '知欲知求
+轉識成智',
           subtitle: '以大型國際生醫授權案 IP 實務，協助研發階段企業，同步建構經得起嚴苛審查的 IP 資產。',
           desc: '我們擅長在技術完全到位前，預判商業路徑，提前封裝具備防禦力的專利架構。確保您的研發成果在面對資本市場時，是具體的資產，而非模糊的概念。',
           ctaLabel: '預約檢測',
@@ -238,9 +239,9 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       ctaButton: '洽詢開課',
     },
     footer: {
-      social: '社群連結',
-      linkedinCompany: 'LinkedIn 國際官方專頁',
-      linkedinShowcase: 'LinkedIn 台灣官方專頁',
+      social: 'Community',
+      linkedinCompany: 'LinkedIn Global',
+      linkedinShowcase: 'LinkedIn Taiwan',
       slogan: '讓技術成為你最有力的談判籌碼。'
     }
   },
