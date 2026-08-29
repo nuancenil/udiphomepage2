@@ -242,7 +242,7 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       social: 'Community',
       linkedinCompany: 'LinkedIn Global',
       linkedinShowcase: 'LinkedIn Taiwan',
-      slogan: '讓技術成為你最有力的談判籌碼。'
+      slogan: '知欲知求 轉識成智'
     }
   },
   en: {
@@ -261,7 +261,7 @@ export const content: Record<'zh' | 'en', LocalizedContent> = {
       heroSlides: [
         {
           tag: 'Technical Assetization Strategy',
-          title: 'Turning Technical Vision into Bargaining Chips.',
+          title: 'Quest for Knowledge, Path to Insight',
           subtitle: 'Drawing on Large-Scale International Biomedical Licensing Experience to Build Scrutiny-Proof IP Assets for R&D Enterprises.',
           desc: 'We specialize in anticipating business paths and pre-packaging defensive patent architectures before technology is fully matured. We ensure your R&D outcomes are concrete assets, not vague concepts, when facing the capital market.',
           ctaLabel: 'Book a Consultation',
